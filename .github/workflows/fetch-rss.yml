@@ -1,0 +1,118 @@
+name: Fetch RSS Feeds
+
+on:
+  schedule:
+    # Run 5 times a day at strategic IST times (converted to UTC)
+    # 7:00 AM IST = 1:30 AM UTC (Morning)
+    - cron: '30 1 * * *'
+    # 11:00 AM IST = 5:30 AM UTC (Late Morning)  
+    - cron: '30 5 * * *'
+    # 3:00 PM IST = 9:30 AM UTC (Afternoon)
+    - cron: '30 9 * * *'
+    # 7:00 PM IST = 1:30 PM UTC (Evening)
+    - cron: '30 13 * * *'
+    # 11:00 PM IST = 5:30 PM UTC (Night)
+    - cron: '30 17 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force fetch all channels'
+        required: false
+        type: boolean
+        default: false
+  push:
+    paths:
+      - 'data/config.json'
+      - 'scripts/fetch-rss.js'
+      - '.github/workflows/fetch-rss.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  fetch-feeds:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+            
+      - name: Install dependencies
+        run: npm ci --only=production || npm install --production
+        
+      - name: Fetch RSS feeds
+        run: node scripts/fetch-rss.js
+        env:
+          NODE_ENV: production
+          FORCE_FETCH: ${{ github.event.inputs.force }}
+          
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --exit-code data/videos.json || echo "changes=true" >> $GITHUB_OUTPUT
+          
+      - name: Commit and push changes
+        if: steps.check_changes.outputs.changes == 'true'
+        run: |
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/videos.json data/fetch-log.json data/videos.backup.json || true
+          git commit -m "Update RSS feeds - $(date -u '+%Y-%m-%d %H:%M:%S UTC')" || exit 0
+          git push
+          
+      - name: Upload logs as artifact
+        if: always()
+        uses: actions/upload-artifact@v3
+        with:
+          name: fetch-logs
+          path: data/fetch-log.json
+          retention-days: 7
+          
+  cleanup-old-logs:
+    runs-on: ubuntu-latest
+    needs: fetch-feeds
+    if: success()
+    
+    steps:
+      - name: Delete old artifacts
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const artifactName = 'fetch-logs';
+            const maxAge = 7 * 24 * 60 * 60 * 1000; // 7 days
+            
+            const artifacts = await github.rest.actions.listArtifactsForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              name: artifactName
+            });
+            
+            const now = Date.now();
+            for (const artifact of artifacts.data.artifacts) {
+              const createdAt = new Date(artifact.created_at).getTime();
+              if (now - createdAt > maxAge) {
+                await github.rest.actions.deleteArtifact({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  artifact_id: artifact.id
+                });
+                console.log(`Deleted old artifact: ${artifact.name} (${artifact.created_at})`);
+              }
+            }

@@ -1,0 +1,157 @@
+---
+// PWA Install Prompt Component
+---
+
+<div id="pwa-install-prompt" class="fixed bottom-6 left-6 right-6 md:left-auto md:right-6 md:w-96 bg-white border border-gray-200 rounded-xl shadow-lg p-4 transform translate-y-20 opacity-0 transition-all duration-300 z-50 hidden">
+  <div class="flex items-start gap-3">
+    <div class="flex-shrink-0">
+      <img src="/zero1-logo-dark.svg" alt="Zero1 Network" class="h-8 w-auto" />
+    </div>
+    <div class="flex-1 min-w-0">
+      <h3 class="text-sm font-semibold text-gray-900 mb-1">Install Zero1 Network</h3>
+      <p class="text-xs text-gray-600 mb-3 leading-relaxed">Get quick access to the latest business content with our app.</p>
+      <div class="flex gap-2">
+        <button 
+          id="pwa-install-btn" 
+          class="px-3 py-1.5 bg-gray-900 text-white text-xs font-medium rounded-lg hover:bg-gray-800 transition-colors"
+        >
+          Install
+        </button>
+        <button 
+          id="pwa-dismiss-btn" 
+          class="px-3 py-1.5 text-gray-600 text-xs font-medium hover:text-gray-900 transition-colors"
+        >
+          Not now
+        </button>
+      </div>
+    </div>
+    <button 
+      id="pwa-close-btn" 
+      class="flex-shrink-0 text-gray-400 hover:text-gray-600 transition-colors"
+      aria-label="Close"
+    >
+      <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+      </svg>
+    </button>
+  </div>
+</div>
+
+<script>
+  // PWA Install Prompt Logic
+  let deferredPrompt = null;
+  const installPrompt = document.getElementById('pwa-install-prompt');
+  const installBtn = document.getElementById('pwa-install-btn');
+  const dismissBtn = document.getElementById('pwa-dismiss-btn');
+  const closeBtn = document.getElementById('pwa-close-btn');
+
+  // Listen for beforeinstallprompt event
+  window.addEventListener('beforeinstallprompt', (e) => {
+    // Prevent the mini-infobar from appearing
+    e.preventDefault();
+    deferredPrompt = e;
+    
+    // Check if user has previously dismissed
+    const dismissed = localStorage.getItem('pwa-install-dismissed');
+    const installed = localStorage.getItem('pwa-installed');
+    
+    if (!dismissed && !installed) {
+      showInstallPrompt();
+    }
+  });
+
+  // Show install prompt with animation
+  function showInstallPrompt() {
+    if (installPrompt) {
+      installPrompt.classList.remove('hidden');
+      // Trigger animation after element is visible
+      setTimeout(() => {
+        installPrompt.style.transform = 'translateY(0)';
+        installPrompt.style.opacity = '1';
+      }, 10);
+    }
+  }
+
+  // Hide install prompt with animation
+  function hideInstallPrompt() {
+    if (installPrompt) {
+      installPrompt.style.transform = 'translateY(20px)';
+      installPrompt.style.opacity = '0';
+      setTimeout(() => {
+        installPrompt.classList.add('hidden');
+      }, 300);
+    }
+  }
+
+  // Handle install button click
+  if (installBtn) {
+    installBtn.addEventListener('click', async () => {
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        
+        if (outcome === 'accepted') {
+          localStorage.setItem('pwa-installed', 'true');
+        }
+        
+        deferredPrompt = null;
+        hideInstallPrompt();
+      }
+    });
+  }
+
+  // Handle dismiss button click
+  if (dismissBtn) {
+    dismissBtn.addEventListener('click', () => {
+      localStorage.setItem('pwa-install-dismissed', Date.now().toString());
+      hideInstallPrompt();
+    });
+  }
+
+  // Handle close button click
+  if (closeBtn) {
+    closeBtn.addEventListener('click', () => {
+      hideInstallPrompt();
+    });
+  }
+
+  // Check if app is already installed
+  window.addEventListener('appinstalled', () => {
+    localStorage.setItem('pwa-installed', 'true');
+    hideInstallPrompt();
+  });
+
+  // Reset dismissal after 7 days
+  const dismissed = localStorage.getItem('pwa-install-dismissed');
+  if (dismissed) {
+    const dismissedTime = parseInt(dismissed);
+    const sevenDays = 7 * 24 * 60 * 60 * 1000;
+    
+    if (Date.now() - dismissedTime > sevenDays) {
+      localStorage.removeItem('pwa-install-dismissed');
+    }
+  }
+
+  // Register service worker
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', async () => {
+      try {
+        const registration = await navigator.serviceWorker.register('/sw.js');
+        console.log('SW registered: ', registration);
+        
+        // Check for updates
+        registration.addEventListener('updatefound', () => {
+          const newWorker = registration.installing;
+          newWorker.addEventListener('statechange', () => {
+            if (newWorker.state === 'installed' && navigator.serviceWorker.controller) {
+              // New content available, could show update notification
+              console.log('New content available');
+            }
+          });
+        });
+      } catch (error) {
+        console.log('SW registration failed: ', error);
+      }
+    });
+  }
+</script>

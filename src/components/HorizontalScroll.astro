@@ -1,0 +1,16 @@
+---
+export interface Props {
+  title: string;
+  class?: string;
+}
+
+const { title, class: className = '' } = Astro.props;
+---
+
+<section class={`horizontal-section mb-20 ${className}`}>
+  <h2 class="mb-8 text-balance">{title}</h2>
+  <div class="horizontal-scroll flex gap-5 overflow-x-auto pb-6">
+    <slot />
+  </div>
+</section>
+

@@ -1,0 +1,16 @@
+---
+import type { ChannelColor } from '@/lib/types';
+import { CHANNEL_COLORS } from '@/lib/types';
+
+export interface Props {
+  name: string;
+  color: ChannelColor;
+}
+
+const { name, color } = Astro.props;
+const colorClasses = CHANNEL_COLORS[color];
+---
+
+<span class={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium ${colorClasses.bg} ${colorClasses.text} border border-gray-100`}>
+  {name}
+</span>

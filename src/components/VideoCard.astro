@@ -1,0 +1,138 @@
+---
+import type { VideoWithChannel } from '@/lib/types';
+import { formatViewCount, formatDuration, formatTimeAgo } from '@/lib/data';
+import ChannelBadge from './ChannelBadge.astro';
+import ShareButton from './ShareButton.astro';
+
+export interface Props {
+  video: VideoWithChannel;
+  variant?: 'horizontal' | 'vertical' | 'featured';
+}
+
+const { video, variant = 'vertical' } = Astro.props;
+---
+
+{variant === 'featured' ? (
+  <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="block">
+    <article class="featured-card card-elevated rounded-2xl overflow-hidden cursor-pointer" 
+      data-category={video.channelCategory}
+      data-searchable 
+      data-title={video.title} 
+      data-channel={video.channelName}
+      data-description={video.description}
+      data-keywords={video.keywords || ''}
+      data-searchable-text={video.searchableText || ''}>
+      <div class="relative aspect-video">
+        <img 
+          src={video.thumbnailUrl} 
+          alt={video.title}
+          class="w-full h-full object-cover bg-gray-50"
+          loading="lazy"
+        />
+        {video.isLive && (
+          <span class="absolute top-4 right-4 bg-red-50 text-red-600 px-3 py-1.5 rounded-full text-xs font-medium">
+            🔴 Live
+          </span>
+        )}
+      </div>
+    <div class="p-8">
+      <h2 class="text-balance mb-4 leading-tight">{video.title}</h2>
+      <p class="text-gray-500 mb-6 line-clamp-2 text-lg font-light leading-relaxed">{video.description}</p>
+      <div class="flex items-center gap-3 text-sm text-gray-400">
+        <ChannelBadge name={video.channelName} color={video.channelColor} />
+        <span>•</span>
+        <span>{formatViewCount(video.viewCount)} views</span>
+        <span>•</span>
+        <span>{formatTimeAgo(video.publishedAt)}</span>
+      </div>
+    </div>
+    </article>
+  </a>
+) : variant === 'horizontal' ? (
+  <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="block">
+    <article class="horizontal-card min-w-[240px] sm:min-w-[260px] card-elevated rounded-xl overflow-hidden cursor-pointer" 
+      data-category={video.channelCategory}
+      data-searchable 
+      data-title={video.title} 
+      data-channel={video.channelName}
+      data-description={video.description}
+      data-keywords={video.keywords || ''}
+      data-searchable-text={video.searchableText || ''}>
+      <div class="relative">
+        <img 
+          src={video.thumbnailUrl} 
+          alt={video.title}
+          class="w-full h-[146px] object-cover bg-gray-50 aspect-video"
+          loading="lazy"
+        />
+        {video.isLive && (
+          <span class="absolute top-3 right-3 bg-red-50 text-red-600 px-2.5 py-1 rounded-full text-[11px] font-medium">
+            Live
+          </span>
+        )}
+        {!video.isLive && formatDuration(video.duration) && (
+          <span class="absolute bottom-3 right-3 bg-black/75 text-white px-2 py-1 rounded-md text-xs font-medium">
+            {formatDuration(video.duration)}
+          </span>
+        )}
+      </div>
+      <div class="p-5">
+        <h3 class="text-sm font-semibold mb-3 line-clamp-2 leading-snug">{video.title}</h3>
+        <div class="flex items-center justify-between">
+          <div class="text-xs text-gray-400">
+            <span class="font-medium text-gray-600 dark:text-gray-300">{video.channelName}</span>
+            <span class="block mt-1.5">{formatViewCount(video.viewCount)} views</span>
+          </div>
+          <ShareButton video={video} compact={true} />
+        </div>
+      </div>
+    </article>
+  </a>
+) : (
+  <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="block">
+    <article class="video-item flex gap-6 p-7 cursor-pointer transition-all duration-150 hover:bg-gray-50/50 dark:hover:bg-gray-800/50" 
+      data-category={video.channelCategory}
+      data-searchable 
+      data-title={video.title} 
+      data-channel={video.channelName}
+      data-description={video.description}
+      data-keywords={video.keywords || ''}
+      data-searchable-text={video.searchableText || ''}>
+      <div class="relative flex-shrink-0">
+        <img 
+          src={video.thumbnailUrl} 
+          alt={video.title}
+          class="w-32 sm:w-40 md:w-44 h-[72px] sm:h-[90px] md:h-[99px] object-cover bg-gray-50 dark:bg-gray-800 rounded-lg"
+          loading="lazy"
+        />
+        {!video.isLive && formatDuration(video.duration) && (
+          <span class="absolute bottom-2 right-2 bg-black/75 text-white px-2 py-1 rounded-md text-xs font-medium">
+            {formatDuration(video.duration)}
+          </span>
+        )}
+      </div>
+      <div class="flex-1 min-w-0">
+        <h3 class="font-semibold mb-3 line-clamp-2 leading-snug text-gray-800 dark:text-gray-200">{video.title}</h3>
+        <p class="text-sm text-gray-500 mb-4 line-clamp-2 leading-relaxed font-light">{video.description}</p>
+        <div class="flex items-center gap-3 text-sm text-gray-400">
+          <ChannelBadge name={video.channelName} color={video.channelColor} />
+          <span>•</span>
+          {video.isLive ? (
+            <>
+              <span class="text-red-500 font-medium">🔴 Live now</span>
+              <span>•</span>
+              <span>{formatViewCount(video.viewCount)} watching</span>
+            </>
+          ) : (
+            <>
+              <span>{formatViewCount(video.viewCount)} views</span>
+              <span>•</span>
+              <span>{formatTimeAgo(video.publishedAt)}</span>
+            </>
+          )}
+        </div>
+      </div>
+    </article>
+  </a>
+)}
+

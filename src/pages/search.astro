@@ -1,0 +1,166 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import VideoCard from '@/components/VideoCard.astro';
+import { getAllVideos } from '@/lib/data';
+import '../styles/global.css';
+
+const allVideos = getAllVideos();
+---
+
+<Layout title="Search | Zero1 Network" description="Search through stories from India's best storytellers">
+  <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm py-16 mb-12 border-b border-gray-100/60 dark:border-gray-800/60">
+    <div class="container max-w-7xl mx-auto px-6">
+      <h1 class="text-balance mb-6">Search Stories</h1>
+      <p class="text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl">Find insights from India's best storytellers</p>
+    </div>
+  </header>
+
+  <main class="container max-w-7xl mx-auto px-6">
+    <!-- Search Box -->
+    <section class="mb-12">
+      <div class="max-w-2xl mx-auto">
+        <div class="relative">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Search stories, channels, topics..."
+            class="w-full px-6 py-4 text-lg border border-gray-200 dark:border-gray-700 rounded-2xl bg-white dark:bg-gray-800 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white focus:border-transparent transition-all"
+          />
+          <div class="absolute right-4 top-1/2 transform -translate-y-1/2">
+            <svg class="w-6 h-6 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+          </div>
+        </div>
+        <div class="mt-4 text-center">
+          <span id="search-stats" class="text-sm text-gray-500 dark:text-gray-400"></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Results -->
+    <section class="mb-20">
+      <div class="max-w-5xl mx-auto">
+        <div class="magazine-section" id="search-results">
+          {allVideos.map((video, index) => (
+            <>
+              <VideoCard video={video} variant="vertical" />
+              {index < allVideos.length - 1 && <div class="border-b border-gray-50 dark:border-gray-800" />}
+            </>
+          ))}
+        </div>
+        
+        <!-- No results message -->
+        <div id="no-results" class="hidden text-center py-16">
+          <div class="max-w-md mx-auto">
+            <svg class="w-16 h-16 text-gray-300 dark:text-gray-600 mx-auto mb-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+            </svg>
+            <h3 class="text-xl font-semibold text-gray-600 dark:text-gray-400 mb-2">No stories found</h3>
+            <p class="text-gray-500 dark:text-gray-500">Try adjusting your search terms or browse our categories</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="mt-32 py-16 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
+    <div class="container max-w-7xl mx-auto px-6 text-center">
+      <p class="text-gray-400 text-sm font-light">© 2025 Zero1 Network. Supporting India's best storytellers.</p>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    const searchResults = document.getElementById('search-results');
+    const noResults = document.getElementById('no-results');
+    const searchStats = document.getElementById('search-stats');
+    const allVideoCards = searchResults.querySelectorAll('.video-item');
+
+    let allVideos = [];
+    
+    // Extract video data from DOM
+    allVideoCards.forEach(card => {
+      const video = {
+        element: card,
+        title: card.getAttribute('data-title') || '',
+        channel: card.getAttribute('data-channel') || '',
+        description: card.getAttribute('data-description') || '',
+        keywords: card.getAttribute('data-keywords') || '',
+        searchableText: card.getAttribute('data-searchable-text') || '',
+        category: card.getAttribute('data-category') || ''
+      };
+      allVideos.push(video);
+    });
+
+    function performSearch(query) {
+      if (!query.trim()) {
+        // Show all videos
+        allVideos.forEach(video => {
+          video.element.style.display = '';
+          if (video.element.nextElementSibling) {
+            video.element.nextElementSibling.style.display = '';
+          }
+        });
+        searchResults.style.display = '';
+        noResults.style.display = 'none';
+        searchStats.textContent = `Showing all ${allVideos.length} stories`;
+        return;
+      }
+
+      const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+      let matchCount = 0;
+      
+      allVideos.forEach((video, index) => {
+        const searchableContent = [
+          video.title,
+          video.channel,
+          video.description,
+          video.keywords,
+          video.searchableText,
+          video.category
+        ].join(' ').toLowerCase();
+
+        const matches = searchTerms.every(term => 
+          searchableContent.includes(term)
+        );
+
+        if (matches) {
+          video.element.style.display = '';
+          if (video.element.nextElementSibling) {
+            video.element.nextElementSibling.style.display = '';
+          }
+          matchCount++;
+        } else {
+          video.element.style.display = 'none';
+          if (video.element.nextElementSibling) {
+            video.element.nextElementSibling.style.display = 'none';
+          }
+        }
+      });
+
+      if (matchCount === 0) {
+        searchResults.style.display = 'none';
+        noResults.style.display = 'block';
+        searchStats.textContent = '';
+      } else {
+        searchResults.style.display = '';
+        noResults.style.display = 'none';
+        searchStats.textContent = `Found ${matchCount} ${matchCount === 1 ? 'story' : 'stories'}`;
+      }
+    }
+
+    // Initial stats
+    searchStats.textContent = `Showing all ${allVideos.length} stories`;
+
+    // Search input event
+    searchInput.addEventListener('input', (e) => {
+      performSearch(e.target.value);
+    });
+
+    // Focus search input on page load
+    searchInput.focus();
+  });
+</script>

@@ -1,0 +1,177 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import FilterButtons from '@/components/FilterButtons.astro';
+import VideoCard from '@/components/VideoCard.astro';
+import ChannelBadge from '@/components/ChannelBadge.astro';
+import { getAllVideos, formatViewCount, formatTimeAgo, formatDuration } from '@/lib/data';
+import '../styles/global.css';
+
+const allVideos = getAllVideos();
+const totalVideos = allVideos.length;
+
+// Pagination (could be enhanced with URL params)
+const videosPerPage = 24;
+const currentPage = 1;
+const startIndex = (currentPage - 1) * videosPerPage;
+const paginatedVideos = allVideos.slice(startIndex, startIndex + videosPerPage);
+---
+
+<Layout title="Archive | Zero1 Network" description="Browse all videos from Zero1 Network creators">
+  <main class="container max-w-7xl mx-auto px-6 py-12">
+    <!-- Header -->
+    <div class="mb-8">
+      <h1 class="text-4xl font-bold text-gray-900 mb-4 tracking-tight">Video Archive</h1>
+      <p class="text-lg text-gray-600 mb-6">
+        Browse all {totalVideos} videos from our creator community, sorted by most recent.
+      </p>
+      
+      <!-- Filters -->
+      <div class="mb-8">
+        <FilterButtons activeFilter="all" />
+      </div>
+    </div>
+
+    <!-- Video Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 sm:gap-6 mb-12">
+      {paginatedVideos.map(video => (
+        <a href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" class="block">
+          <article class="archive-video-card bg-white dark:bg-gray-800 rounded-lg border border-gray-200 dark:border-gray-700 overflow-hidden hover:border-gray-300 dark:hover:border-gray-600 hover:shadow-sm dark:hover:shadow-xl transition-all duration-200 cursor-pointer" data-category={video.channelCategory}>
+          <!-- Thumbnail -->
+          <div class="relative aspect-video">
+            <img 
+              src={video.thumbnailUrl} 
+              alt={video.title}
+              class="w-full h-full object-cover bg-gray-100"
+              loading="lazy"
+            />
+            
+            <!-- Duration/Live indicator -->
+            {video.isLive ? (
+              <span class="absolute bottom-2 right-2 bg-red-600 text-white px-2 py-1 rounded text-xs font-medium">
+                🔴 LIVE
+              </span>
+            ) : (
+              <span class="absolute bottom-2 right-2 bg-black/80 text-white px-2 py-1 rounded text-xs">
+                {formatDuration(video.duration)}
+              </span>
+            )}
+            
+            <!-- View count overlay -->
+            <div class="absolute top-2 left-2 bg-black/80 text-white px-2 py-1 rounded text-xs">
+              {formatViewCount(video.viewCount)} views
+            </div>
+          </div>
+          
+          <!-- Content -->
+          <div class="p-4">
+            <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2 leading-snug">
+              {video.title}
+            </h3>
+            
+            <div class="flex items-center justify-between mb-3">
+              <ChannelBadge name={video.channelName} color={video.channelColor} />
+              <span class="text-xs text-gray-500">
+                {formatTimeAgo(video.publishedAt)}
+              </span>
+            </div>
+            
+            {video.description && (
+              <p class="text-sm text-gray-600 line-clamp-2 leading-relaxed">
+                {video.description}
+              </p>
+            )}
+          </div>
+          </article>
+        </a>
+      ))}
+    </div>
+
+    <!-- Load More / Pagination -->
+    {totalVideos > videosPerPage && (
+      <div class="text-center">
+        <button class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+          Load More Videos
+        </button>
+        <p class="text-sm text-gray-500 mt-3">
+          Showing {Math.min(videosPerPage, totalVideos)} of {totalVideos} videos
+        </p>
+      </div>
+    )}
+
+    <!-- Empty state -->
+    {totalVideos === 0 && (
+      <div class="text-center py-16">
+        <div class="text-gray-400 mb-4">
+          <svg class="w-20 h-20 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+          </svg>
+        </div>
+        <h3 class="text-xl font-semibold text-gray-900 mb-2">No Videos Found</h3>
+        <p class="text-gray-600 max-w-md mx-auto">
+          Videos will appear here once channels are configured and RSS feeds are fetched.
+        </p>
+      </div>
+    )}
+  </main>
+</Layout>
+
+<style>
+  .archive-video-card:hover {
+    transform: translateY(-1px);
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const videoCards = document.querySelectorAll('.archive-video-card');
+    
+    // Filter functionality
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('filter-btn-active');
+          b.classList.add('filter-btn-inactive');
+        });
+        
+        btn.classList.remove('filter-btn-inactive');
+        btn.classList.add('filter-btn-active');
+        
+        const filter = btn.getAttribute('data-filter');
+        filterVideoCards(filter);
+      });
+    });
+    
+    // Filter function
+    function filterVideoCards(filter) {
+      const videoLinks = document.querySelectorAll('a[href*="youtube.com"]');
+      
+      videoLinks.forEach(link => {
+        const article = link.querySelector('.archive-video-card');
+        const category = article?.getAttribute('data-category');
+        
+        if (filter === 'all' || category === filter) {
+          link.style.display = '';
+        } else {
+          link.style.display = 'none';
+        }
+      });
+      
+      // Update results count
+      const visibleCount = Array.from(videoLinks).filter(link => 
+        link.style.display !== 'none'
+      ).length;
+      
+      console.log(`Showing ${visibleCount} videos for filter: ${filter}`);
+    }
+    
+    // Load more functionality
+    const loadMoreBtn = document.querySelector('button');
+    if (loadMoreBtn?.textContent?.includes('Load More')) {
+      loadMoreBtn.addEventListener('click', () => {
+        console.log('Loading more videos...');
+        // Load more logic would be implemented here
+      });
+    }
+  });
+</script>

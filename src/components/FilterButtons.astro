@@ -1,0 +1,34 @@
+---
+import type { FilterCategory } from '@/lib/types';
+
+export interface Props {
+  activeFilter?: FilterCategory;
+}
+
+const { activeFilter = 'all' } = Astro.props;
+
+const filters: { value: FilterCategory; label: string }[] = [
+  { value: 'all', label: 'All' },
+  { value: 'business', label: 'Business' },
+  { value: 'finance', label: 'Finance' },
+  { value: 'health', label: 'Health' },
+  { value: 'upskilling', label: 'Upskilling' },
+  { value: 'sustainability', label: 'Sustainability' },
+];
+---
+
+<div class="flex gap-2 overflow-x-auto pb-2 scrollbar-hide">
+  {filters.map((filter) => (
+    <button
+      data-filter={filter.value}
+      class={`filter-btn px-3 sm:px-5 py-2 sm:py-2.5 border rounded-full text-xs sm:text-sm font-medium whitespace-nowrap ${
+        activeFilter === filter.value
+          ? 'filter-btn-active'
+          : 'filter-btn-inactive'
+      }`}
+    >
+      {filter.label}
+    </button>
+  ))}
+</div>
+

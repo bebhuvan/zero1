@@ -1,0 +1,93 @@
+---
+// Simple search box component
+---
+
+<div class="relative max-w-md w-full">
+  <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+    <svg class="h-5 w-5 text-gray-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+    </svg>
+  </div>
+  <input
+    type="text"
+    id="search-input"
+    class="block w-full pl-10 pr-3 py-2 border border-gray-200 rounded-lg text-sm placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+    placeholder="Search stories..."
+    autocomplete="off"
+  />
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const searchInput = document.getElementById('search-input');
+    if (!searchInput) return;
+
+    let searchTimeout;
+    
+    searchInput.addEventListener('input', (e) => {
+      clearTimeout(searchTimeout);
+      searchTimeout = setTimeout(() => {
+        const query = e.target.value.toLowerCase().trim();
+        performSearch(query);
+      }, 300);
+    });
+
+    function performSearch(query) {
+      // Get all video cards on the page
+      const videoElements = document.querySelectorAll('[data-searchable]');
+      
+      if (!query) {
+        // Show all videos if search is empty
+        videoElements.forEach(el => {
+          el.style.display = '';
+        });
+        updateSectionVisibility();
+        return;
+      }
+
+      let visibleCount = 0;
+      const searchTerms = query.toLowerCase().split(' ').filter(term => term.length > 0);
+      
+      videoElements.forEach(el => {
+        const title = el.getAttribute('data-title') || '';
+        const channel = el.getAttribute('data-channel') || '';
+        const category = el.getAttribute('data-category') || '';
+        const description = el.getAttribute('data-description') || '';
+        const keywords = el.getAttribute('data-keywords') || '';
+        const searchableText = el.getAttribute('data-searchable-text') || '';
+        
+        // Combine all searchable text
+        const allSearchText = `${title} ${channel} ${category} ${description} ${keywords} ${searchableText}`.toLowerCase();
+        
+        // Check if all search terms are found (AND search)
+        const matches = searchTerms.every(term => allSearchText.includes(term));
+        
+        if (matches) {
+          el.style.display = '';
+          visibleCount++;
+        } else {
+          el.style.display = 'none';
+        }
+      });
+
+      // Update sections visibility
+      updateSectionVisibility();
+      
+      // Show search results count
+      console.log(`Found ${visibleCount} videos matching "${query}"`);
+    }
+
+    function updateSectionVisibility() {
+      const sections = document.querySelectorAll('section, .horizontal-section');
+      
+      sections.forEach(section => {
+        const visibleVideos = section.querySelectorAll('[data-searchable]:not([style*="display: none"])');
+        if (visibleVideos.length > 0) {
+          section.style.display = '';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    }
+  });
+</script>

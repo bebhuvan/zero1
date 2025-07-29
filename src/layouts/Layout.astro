@@ -1,0 +1,71 @@
+---
+import Navigation from '@/components/Navigation.astro';
+import PWAInstallPrompt from '@/components/PWAInstallPrompt.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = 'Latest videos from our creator community' } = Astro.props;
+
+// Add cache-busting headers for fresh content
+Astro.response.headers.set('Cache-Control', 'public, max-age=300'); // 5 minutes for development
+Astro.response.headers.set('Last-Modified', new Date().toUTCString());
+---
+
+<!DOCTYPE html>
+<html lang="en" class="dark:bg-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="Zero1 Network RSS Feed" href="/rss.xml" />
+    
+    <!-- PWA Meta Tags -->
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#1f2937" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="Zero1 Network" />
+    
+    <!-- Apple Touch Icons (will need to be created) -->
+    <link rel="apple-touch-icon" href="/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/icons/icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/icon-192x192.png" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  </head>
+  <body class="bg-white dark:bg-gray-900 font-inter text-gray-900 dark:text-gray-100 transition-colors">
+    <Navigation />
+    <slot />
+    <PWAInstallPrompt />
+  </body>
+</html>
+
+<style is:global>
+  html {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  body {
+    letter-spacing: -0.01em;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+</style>

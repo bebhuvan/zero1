@@ -1,0 +1,233 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import FilterButtons from '@/components/FilterButtons.astro';
+import VideoCard from '@/components/VideoCard.astro';
+import HorizontalScroll from '@/components/HorizontalScroll.astro';
+import SearchBox from '@/components/SearchBox.astro';
+import { 
+  getFeaturedVideo, 
+  getTrendingVideos, 
+  getLatestVideos, 
+  getVideosByCategory
+} from '@/lib/data';
+import '../styles/global.css';
+
+const featuredVideo = getFeaturedVideo();
+const trendingVideos = getTrendingVideos(8);
+const latestVideos = getLatestVideos(10);
+const financeVideos = getVideosByCategory('finance').slice(0, 6);
+const businessVideos = getVideosByCategory('business').slice(0, 6);
+const healthVideos = getVideosByCategory('health').slice(0, 6);
+const upskillingVideos = getVideosByCategory('upskilling').slice(0, 6);
+const sustainabilityVideos = getVideosByCategory('sustainability').slice(0, 6);
+---
+
+<Layout title="Zero1 Network | Supporting India's Best Storytellers" description="Discover insights from India's best storytellers across business, finance, health, upskilling, and sustainability. Quality stories that matter.">
+  <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm py-16 mb-12 border-b border-gray-100/60 dark:border-gray-800/60">
+    <div class="container max-w-7xl mx-auto px-6">
+      <h1 class="text-balance mb-6">Latest Stories</h1>
+      <p class="text-base sm:text-lg md:text-xl text-gray-500 dark:text-gray-400 font-light max-w-2xl">India's best storytellers. Quality stories that matter.</p>
+    </div>
+  </header>
+
+  <main class="container max-w-7xl mx-auto px-6">
+    <!-- Filters -->
+    <section class="mb-12">
+      <div class="flex justify-center mb-8">
+        <FilterButtons activeFilter="all" />
+      </div>
+    </section>
+
+    <!-- Featured Video - Constrained Width -->
+    {featuredVideo && (
+      <section class="mb-20">
+        <div class="max-w-4xl mx-auto">
+          <VideoCard video={featuredVideo} variant="featured" />
+        </div>
+      </section>
+    )}
+
+    <!-- Trending - Full Width -->
+    {trendingVideos.length > 0 && (
+      <HorizontalScroll title="Trending This Week">
+        {trendingVideos.map(video => (
+          <VideoCard video={video} variant="horizontal" />
+        ))}
+      </HorizontalScroll>
+    )}
+
+    <div class="section-divider"></div>
+
+    <!-- Latest Uploads - Constrained Width -->
+    <section class="mb-20">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="mb-8">Latest Uploads</h2>
+        <div class="magazine-section">
+          {latestVideos.map((video, index) => (
+            <>
+              <VideoCard video={video} variant="vertical" />
+              {index < latestVideos.length - 1 && <div class="border-b border-gray-50" />}
+            </>
+          ))}
+        </div>
+      </div>
+    </section>
+
+    <!-- Category Sections - Full Width -->
+    {businessVideos.length > 0 && (
+      <>
+        <div class="section-divider"></div>
+        <HorizontalScroll title="Business & Entrepreneurship">
+          {businessVideos.map(video => (
+            <VideoCard video={video} variant="horizontal" />
+          ))}
+        </HorizontalScroll>
+      </>
+    )}
+
+    {financeVideos.length > 0 && (
+      <>
+        <div class="section-divider"></div>
+        <HorizontalScroll title="Finance & Investing">
+          {financeVideos.map(video => (
+            <VideoCard video={video} variant="horizontal" />
+          ))}
+        </HorizontalScroll>
+      </>
+    )}
+
+    {healthVideos.length > 0 && (
+      <>
+        <div class="section-divider"></div>
+        <HorizontalScroll title="Health & Wellness">
+          {healthVideos.map(video => (
+            <VideoCard video={video} variant="horizontal" />
+          ))}
+        </HorizontalScroll>
+      </>
+    )}
+
+    {upskillingVideos.length > 0 && (
+      <>
+        <div class="section-divider"></div>
+        <HorizontalScroll title="Upskilling & Learning">
+          {upskillingVideos.map(video => (
+            <VideoCard video={video} variant="horizontal" />
+          ))}
+        </HorizontalScroll>
+      </>
+    )}
+
+    {sustainabilityVideos.length > 0 && (
+      <>
+        <div class="section-divider"></div>
+        <HorizontalScroll title="Sustainability & Future">
+          {sustainabilityVideos.map(video => (
+            <VideoCard video={video} variant="horizontal" />
+          ))}
+        </HorizontalScroll>
+      </>
+    )}
+  </main>
+
+  <footer class="mt-32 py-16 border-t border-gray-100 dark:border-gray-800 bg-white dark:bg-gray-900">
+    <div class="container max-w-7xl mx-auto px-6 text-center">
+      <div class="mb-4">
+        <a 
+          href="/rss.xml" 
+          target="_blank"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-orange-600 transition-colors text-sm font-medium"
+          title="Subscribe to Zero1 Network RSS Feed"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248S0 22.546 0 20.752s1.456-3.248 3.252-3.248 3.251 1.454 3.251 3.248zM1.677 6.082v4.148c7.187 0 13.093 5.906 13.093 13.093h4.148c0-9.539-7.702-17.241-17.241-17.241zM1.677.014v4.147C14.44 4.161 24.836 14.558 24.851 27.32H29c-.014-15.776-12.86-28.622-28.636-28.636-.229 0-.458.001-.687.014z"/>
+          </svg>
+          Subscribe to RSS Feed
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm font-light">© 2025 Zero1 Network. Supporting India's best storytellers.</p>
+    </div>
+  </footer>
+</Layout>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const filterButtons = document.querySelectorAll('.filter-btn');
+    const videoCards = document.querySelectorAll('.video-item, .horizontal-card, .featured-card');
+    
+    filterButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterButtons.forEach(b => {
+          b.classList.remove('filter-btn-active');
+          b.classList.add('filter-btn-inactive');
+        });
+        
+        btn.classList.remove('filter-btn-inactive');
+        btn.classList.add('filter-btn-active');
+        
+        const filter = btn.getAttribute('data-filter');
+        filterContent(filter);
+      });
+    });
+    
+    // Video cards are now properly linked, no need for click handlers
+    
+    // Filter content function
+    function filterContent(filter) {
+      console.log('Filtering by:', filter);
+      
+      if (filter === 'all') {
+        // Show all sections and videos
+        const sections = document.querySelectorAll('section, .horizontal-section');
+        sections.forEach(section => {
+          section.style.display = '';
+        });
+        
+        const videoCards = document.querySelectorAll('[data-category]');
+        videoCards.forEach(card => {
+          card.style.display = '';
+        });
+      } else {
+        // For category filters, show only videos that match the category
+        // Hide sections that don't contain matching videos
+        const sections = document.querySelectorAll('section, .horizontal-section');
+        
+        sections.forEach(section => {
+          const title = section.querySelector('h2')?.textContent?.toLowerCase() || '';
+          const videoCards = section.querySelectorAll('[data-category]');
+          
+          // Check if this section has videos of the selected category
+          let hasMatchingVideos = false;
+          videoCards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            console.log('Card category:', category, 'Filter:', filter);
+            if (category === filter) {
+              card.style.display = '';
+              hasMatchingVideos = true;
+            } else {
+              card.style.display = 'none';
+            }
+          });
+          
+          console.log('Section:', title, 'Has matching videos:', hasMatchingVideos);
+          
+          // Show section if it has matching videos OR if it's a general section (trending, latest)
+          const isGeneralSection = title.includes('trending') || 
+                                   title.includes('latest') || 
+                                   title.includes('upload') ||
+                                   (filter === 'business' && title.includes('entrepreneurship')) ||
+                                   (filter === 'finance' && title.includes('investing')) ||
+                                   (filter === 'health' && title.includes('wellness')) ||
+                                   (filter === 'upskilling' && title.includes('learning')) ||
+                                   (filter === 'sustainability' && title.includes('future'));
+          
+          if (hasMatchingVideos || isGeneralSection) {
+            section.style.display = '';
+          } else {
+            section.style.display = 'none';
+          }
+        });
+      }
+    }
+  });
+</script>

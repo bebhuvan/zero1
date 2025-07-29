@@ -1,0 +1,171 @@
+---
+import Layout from '@/layouts/Layout.astro';
+import { getMetadata, getLastUpdated } from '@/lib/data';
+import '../styles/global.css';
+
+const metadata = getMetadata();
+const lastUpdated = getLastUpdated();
+---
+
+<Layout title="About | Zero1 Network" description="Supporting India's best storytellers across business, finance, health, upskilling, and sustainability">
+  <main class="container max-w-4xl mx-auto px-6 py-12">
+    <div class="max-w-3xl">
+      <h1 class="text-4xl font-bold text-gray-900 mb-6">About Zero1 Network</h1>
+      
+      <div class="prose prose-gray max-w-none">
+        <p class="text-xl text-gray-700 mb-8 leading-relaxed font-light">
+          India needs good storytellers. Stories that inspire, educate, and transform how we think about business, finance, health, learning, and our sustainable future.
+        </p>
+
+        <p class="text-lg text-gray-600 mb-12 leading-relaxed">
+          Zero1 Network is our platform to support and amplify India's best storytellers across categories that matter. We curate voices that cut through the noise, bringing you insights from creators who are shaping conversations and driving change across the nation.
+        </p>
+
+        <div class="bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl p-8 mb-12 border border-blue-100">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4">Our Mission</h2>
+          <p class="text-gray-700 leading-relaxed">
+            To create a platform where India's most compelling storytellers can reach audiences hungry for authentic, valuable content. We believe in the power of stories to educate, inspire, and create meaningful change in how Indians think about wealth, health, business, and the future.
+          </p>
+        </div>
+
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Categories We Champion</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+          <div class="bg-white rounded-lg border border-gray-100 p-6 hover:shadow-sm transition-shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-3 h-3 bg-blue-500 rounded-full mr-3"></div>
+              <h3 class="text-lg font-semibold text-gray-900">Business & Entrepreneurship</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Stories from founders, business leaders, and entrepreneurs building the future of Indian business.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg border border-gray-100 p-6 hover:shadow-sm transition-shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-3 h-3 bg-purple-500 rounded-full mr-3"></div>
+              <h3 class="text-lg font-semibold text-gray-900">Finance & Investing</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Financial literacy, investment wisdom, and wealth-building strategies tailored for Indian markets.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg border border-gray-100 p-6 hover:shadow-sm transition-shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-3 h-3 bg-green-500 rounded-full mr-3"></div>
+              <h3 class="text-lg font-semibold text-gray-900">Health & Wellness</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Evidence-based health advice, nutrition insights, and wellness practices for modern Indian lifestyles.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg border border-gray-100 p-6 hover:shadow-sm transition-shadow">
+            <div class="flex items-center mb-3">
+              <div class="w-3 h-3 bg-orange-500 rounded-full mr-3"></div>
+              <h3 class="text-lg font-semibold text-gray-900">Upskilling & Learning</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Career growth, skill development, and educational content to thrive in India's evolving economy.
+            </p>
+          </div>
+
+          <div class="bg-white rounded-lg border border-gray-100 p-6 hover:shadow-sm transition-shadow md:col-span-2">
+            <div class="flex items-center mb-3">
+              <div class="w-3 h-3 bg-teal-500 rounded-full mr-3"></div>
+              <h3 class="text-lg font-semibold text-gray-900">Sustainability & Future</h3>
+            </div>
+            <p class="text-gray-600 text-sm">
+              Environmental consciousness, sustainable living, and innovations shaping India's green future.
+            </p>
+          </div>
+        </div>
+
+        <div class="bg-gray-50 rounded-lg p-8 mb-12">
+          <h2 class="text-2xl font-bold text-gray-900 mb-6">Why These Stories Matter</h2>
+          <div class="space-y-4">
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2 mr-4"></div>
+              <p class="text-gray-700">
+                <strong>Quality over Quantity:</strong> We prioritize depth and authenticity over viral content, featuring creators who bring genuine expertise and insight.
+              </p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2 mr-4"></div>
+              <p class="text-gray-700">
+                <strong>Indian Context:</strong> All content is relevant to Indian audiences, addressing our unique challenges, opportunities, and cultural context.
+              </p>
+            </div>
+            <div class="flex items-start">
+              <div class="flex-shrink-0 w-2 h-2 bg-gray-400 rounded-full mt-2 mr-4"></div>
+              <p class="text-gray-700">
+                <strong>Actionable Insights:</strong> Every story offers practical value, whether it's financial advice, health tips, business strategies, or learning opportunities.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white rounded-lg border border-gray-100 p-8 mb-8">
+          <h2 class="text-2xl font-bold text-gray-900 mb-4 text-center">Network Impact</h2>
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="text-center">
+              <div class="text-3xl font-bold text-gray-900 mb-1">{metadata.totalChannels}</div>
+              <div class="text-sm text-gray-600">Storytellers</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-gray-900 mb-1">{metadata.totalVideos}</div>
+              <div class="text-sm text-gray-600">Stories</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-gray-900 mb-1">5</div>
+              <div class="text-sm text-gray-600">Categories</div>
+            </div>
+            <div class="text-center">
+              <div class="text-3xl font-bold text-gray-900 mb-1">Daily</div>
+              <div class="text-sm text-gray-600">Updates</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="border-t border-gray-200 pt-8">
+          <h2 class="text-xl font-bold text-gray-900 mb-4">Join the Movement</h2>
+          <p class="text-gray-600 mb-6">
+            Zero1 Network is more than a content aggregator—it's a movement to elevate the quality of conversations 
+            in Indian digital media. By supporting these storytellers, we're investing in a more informed, 
+            prosperous, and sustainable future for India.
+          </p>
+          
+          <p class="text-sm text-gray-500 italic">
+            Last updated: {new Date(lastUpdated).toLocaleDateString('en-US', { 
+              year: 'numeric', 
+              month: 'long', 
+              day: 'numeric',
+              hour: '2-digit',
+              minute: '2-digit'
+            })}
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="mt-16 py-12 border-t border-gray-100 bg-white">
+    <div class="container max-w-4xl mx-auto px-6 text-center">
+      <div class="mb-4">
+        <a 
+          href="/rss.xml" 
+          target="_blank"
+          class="inline-flex items-center gap-2 text-gray-600 hover:text-orange-600 transition-colors text-sm font-medium"
+          title="Subscribe to Zero1 Network RSS Feed"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M6.503 20.752c0 1.794-1.456 3.248-3.251 3.248S0 22.546 0 20.752s1.456-3.248 3.252-3.248 3.251 1.454 3.251 3.248zM1.677 6.082v4.148c7.187 0 13.093 5.906 13.093 13.093h4.148c0-9.539-7.702-17.241-17.241-17.241zM1.677.014v4.147C14.44 4.161 24.836 14.558 24.851 27.32H29c-.014-15.776-12.86-28.622-28.636-28.636-.229 0-.458.001-.687.014z"/>
+          </svg>
+          Subscribe to RSS Feed
+        </a>
+      </div>
+      <p class="text-gray-400 text-sm font-light">© 2025 Zero1 Network. Supporting India's best storytellers.</p>
+    </div>
+  </footer>
+</Layout>

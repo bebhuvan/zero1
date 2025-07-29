@@ -1,0 +1,185 @@
+---
+import DarkModeToggle from './DarkModeToggle.astro';
+
+const currentPath = Astro.url.pathname;
+---
+
+<nav class="bg-white dark:bg-gray-900 border-b border-gray-100 dark:border-gray-800 sticky top-0 z-50">
+  <div class="container max-w-7xl mx-auto px-6">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="/" class="flex items-center hover:opacity-80 transition-opacity">
+          <img src="/zero1-logo-dark.svg" alt="Zero1 Network" class="h-8 w-auto" />
+        </a>
+      </div>
+      
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center justify-between flex-1 ml-10">
+        <!-- Main Navigation -->
+        <div class="flex items-baseline space-x-8">
+          <a 
+            href="/" 
+            class={`px-3 py-2 text-sm font-medium transition-colors ${
+              currentPath === '/' 
+                ? 'text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            Home
+          </a>
+          <a 
+            href="/channels" 
+            class={`px-3 py-2 text-sm font-medium transition-colors ${
+              currentPath === '/channels' 
+                ? 'text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            Channels
+          </a>
+          <a 
+            href="/archive" 
+            class={`px-3 py-2 text-sm font-medium transition-colors ${
+              currentPath === '/archive' 
+                ? 'text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            Archive
+          </a>
+          <a 
+            href="/about" 
+            class={`px-3 py-2 text-sm font-medium transition-colors ${
+              currentPath === '/about' 
+                ? 'text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            About
+          </a>
+          <a 
+            href="/search" 
+            class={`px-3 py-2 text-sm font-medium transition-colors ${
+              currentPath === '/search' 
+                ? 'text-gray-900 dark:text-white border-b-2 border-gray-900 dark:border-white' 
+                : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white'
+            }`}
+          >
+            Search
+          </a>
+        </div>
+        
+        <!-- Right side utilities -->
+        <div class="flex items-center space-x-4">
+          <a 
+            href="/rss.xml" 
+            target="_blank"
+            class="p-2 text-orange-600 dark:text-orange-500 hover:text-orange-700 dark:hover:text-orange-400 transition-colors rounded-md hover:bg-orange-50 dark:hover:bg-orange-900/20"
+            title="Subscribe to RSS Feed"
+          >
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
+              <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
+            </svg>
+          </a>
+          <DarkModeToggle />
+        </div>
+      </div>
+      
+      <!-- Mobile menu button -->
+      <div class="md:hidden flex items-center space-x-2">
+        <DarkModeToggle />
+        <button 
+          id="mobile-menu-btn"
+          class="text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white focus:outline-none p-2"
+          aria-label="Toggle menu"
+        >
+          <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden hidden pb-4">
+      <div class="space-y-1">
+        <a 
+          href="/" 
+          class={`block px-3 py-2 text-base font-medium transition-colors ${
+            currentPath === '/' 
+              ? 'text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800' 
+              : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+          }`}
+        >
+          Home
+        </a>
+        <a 
+          href="/channels" 
+          class={`block px-3 py-2 text-base font-medium transition-colors ${
+            currentPath === '/channels' 
+              ? 'text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800' 
+              : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+          }`}
+        >
+          Channels
+        </a>
+        <a 
+          href="/archive" 
+          class={`block px-3 py-2 text-base font-medium transition-colors ${
+            currentPath === '/archive' 
+              ? 'text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800' 
+              : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+          }`}
+        >
+          Archive
+        </a>
+        <a 
+          href="/about" 
+          class={`block px-3 py-2 text-base font-medium transition-colors ${
+            currentPath === '/about' 
+              ? 'text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800' 
+              : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+          }`}
+        >
+          About
+        </a>
+        <a 
+          href="/search" 
+          class={`block px-3 py-2 text-base font-medium transition-colors ${
+            currentPath === '/search' 
+              ? 'text-gray-900 dark:text-white bg-gray-50 dark:bg-gray-800' 
+              : 'text-gray-600 dark:text-gray-300 hover:text-gray-900 dark:hover:text-white hover:bg-gray-50 dark:hover:bg-gray-800'
+          }`}
+        >
+          Search
+        </a>
+        <a 
+          href="/rss.xml"
+          target="_blank"
+          class="flex items-center gap-2 px-3 py-2 text-base font-medium text-orange-600 dark:text-orange-500 hover:text-orange-700 dark:hover:text-orange-400 transition-colors"
+        >
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M5 3a1 1 0 000 2c5.523 0 10 4.477 10 10a1 1 0 102 0C17 8.373 11.627 3 5 3z"></path>
+            <path d="M4 9a1 1 0 011-1 7 7 0 017 7 1 1 0 11-2 0 5 5 0 00-5-5 1 1 0 01-1-1zM3 15a2 2 0 114 0 2 2 0 01-4 0z"></path>
+          </svg>
+          <span>RSS Feed</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    
+    if (mobileMenuBtn && mobileMenu) {
+      mobileMenuBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    }
+  });
+</script>
