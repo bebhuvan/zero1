@@ -11,6 +11,8 @@ const { name, color } = Astro.props;
 const colorClasses = CHANNEL_COLORS[color];
 ---
 
-<span class={`inline-flex items-center px-3 py-1.5 rounded-full text-xs font-medium ${colorClasses.bg} ${colorClasses.text} border border-gray-100`}>
-  {name}
+<span class={`inline-flex items-center px-2 sm:px-3 py-1 sm:py-1.5 rounded-full text-xs font-medium ${colorClasses.bg} ${colorClasses.text} border border-gray-100 max-w-full`}>
+  <span class="truncate max-w-[120px] sm:max-w-none">
+    {name}
+  </span>
 </span>

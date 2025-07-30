@@ -17,13 +17,17 @@ const paginatedVideos = allVideos.slice(startIndex, startIndex + videosPerPage);
 ---
 
 <Layout title="Archive | Zero1 Network" description="Browse all videos from Zero1 Network creators">
-  <main class="container max-w-7xl mx-auto px-6 py-12">
-    <!-- Header -->
-    <div class="mb-8">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4 tracking-tight">Video Archive</h1>
-      <p class="text-lg text-gray-600 mb-6">
+  <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm py-8 mb-12 border-b border-gray-100/60 dark:border-gray-800/60">
+    <div class="container max-w-7xl mx-auto px-6">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4 tracking-tight">Video Archive</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
         Browse all {totalVideos} videos from our creator community, sorted by most recent.
       </p>
+    </div>
+  </header>
+  
+  <main class="container max-w-7xl mx-auto px-6 pb-12">
+    <div class="mb-8">
       
       <!-- Filters -->
       <div class="mb-8">
@@ -64,19 +68,19 @@ const paginatedVideos = allVideos.slice(startIndex, startIndex + videosPerPage);
           
           <!-- Content -->
           <div class="p-4">
-            <h3 class="font-semibold text-gray-900 mb-2 line-clamp-2 leading-snug">
+            <h3 class="font-semibold text-gray-900 dark:text-white mb-2 line-clamp-2 leading-snug">
               {video.title}
             </h3>
             
             <div class="flex items-center justify-between mb-3">
               <ChannelBadge name={video.channelName} color={video.channelColor} />
-              <span class="text-xs text-gray-500">
+              <span class="text-xs text-gray-500 dark:text-gray-400">
                 {formatTimeAgo(video.publishedAt)}
               </span>
             </div>
             
             {video.description && (
-              <p class="text-sm text-gray-600 line-clamp-2 leading-relaxed">
+              <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 leading-relaxed">
                 {video.description}
               </p>
             )}
@@ -89,10 +93,10 @@ const paginatedVideos = allVideos.slice(startIndex, startIndex + videosPerPage);
     <!-- Load More / Pagination -->
     {totalVideos > videosPerPage && (
       <div class="text-center">
-        <button class="bg-gray-900 text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors font-medium">
+        <button class="bg-gray-900 dark:bg-white text-white dark:text-gray-900 px-6 py-3 rounded-lg hover:bg-gray-800 dark:hover:bg-gray-100 transition-colors font-medium">
           Load More Videos
         </button>
-        <p class="text-sm text-gray-500 mt-3">
+        <p class="text-sm text-gray-500 dark:text-gray-400 mt-3">
           Showing {Math.min(videosPerPage, totalVideos)} of {totalVideos} videos
         </p>
       </div>
@@ -101,13 +105,13 @@ const paginatedVideos = allVideos.slice(startIndex, startIndex + videosPerPage);
     <!-- Empty state -->
     {totalVideos === 0 && (
       <div class="text-center py-16">
-        <div class="text-gray-400 mb-4">
+        <div class="text-gray-400 dark:text-gray-600 mb-4">
           <svg class="w-20 h-20 mx-auto" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
           </svg>
         </div>
-        <h3 class="text-xl font-semibold text-gray-900 mb-2">No Videos Found</h3>
-        <p class="text-gray-600 max-w-md mx-auto">
+        <h3 class="text-xl font-semibold text-gray-900 dark:text-white mb-2">No Videos Found</h3>
+        <p class="text-gray-600 dark:text-gray-400 max-w-md mx-auto">
           Videos will appear here once channels are configured and RSS feeds are fetched.
         </p>
       </div>

@@ -4,49 +4,98 @@
 
 <button
   id="dark-mode-toggle"
-  class="p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 transition-colors"
+  class="relative p-2 rounded-lg text-gray-600 hover:text-gray-900 hover:bg-gray-100 dark:text-gray-300 dark:hover:text-white dark:hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-all duration-75"
   title="Toggle dark mode"
   aria-label="Toggle dark mode"
 >
-  <!-- Sun icon (visible in dark mode) -->
-  <svg id="sun-icon" class="w-5 h-5 hidden dark:block" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
-  </svg>
-  
-  <!-- Moon icon (visible in light mode) -->
-  <svg id="moon-icon" class="w-5 h-5 block dark:hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-  </svg>
+  <div class="relative w-5 h-5">
+    <!-- Sun icon (visible in dark mode) -->
+    <svg class="sun-icon absolute inset-0 w-5 h-5 opacity-0 scale-75 transform transition-all duration-75" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+    </svg>
+    
+    <!-- Moon icon (visible in light mode) -->
+    <svg class="moon-icon absolute inset-0 w-5 h-5 opacity-100 scale-100 transform transition-all duration-75" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+    </svg>
+  </div>
 </button>
+
+<!-- Inline script to prevent FOUC (Flash of Unstyled Content) -->
+<script is:inline>
+  (function() {
+    function getThemePreference() {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    
+    const isDark = getThemePreference() === 'dark';
+    document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+  })();
+</script>
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const toggle = document.getElementById('dark-mode-toggle');
-    const sunIcon = document.getElementById('sun-icon');
-    const moonIcon = document.getElementById('moon-icon');
-    
-    if (!toggle || !sunIcon || !moonIcon) return;
+    if (!toggle) return;
 
-    // Check for saved theme preference or default to light mode
-    const currentTheme = localStorage.getItem('theme') || 'light';
+    const sunIcon = toggle.querySelector('.sun-icon');
+    const moonIcon = toggle.querySelector('.moon-icon');
     
-    // Apply the current theme
-    if (currentTheme === 'dark') {
-      document.documentElement.classList.add('dark');
-    } else {
-      document.documentElement.classList.remove('dark');
+    function updateIcons(isDark) {
+      if (isDark) {
+        sunIcon.classList.add('opacity-100', 'scale-100');
+        sunIcon.classList.remove('opacity-0', 'scale-75');
+        moonIcon.classList.add('opacity-0', 'scale-75');
+        moonIcon.classList.remove('opacity-100', 'scale-100');
+      } else {
+        moonIcon.classList.add('opacity-100', 'scale-100');
+        moonIcon.classList.remove('opacity-0', 'scale-75');
+        sunIcon.classList.add('opacity-0', 'scale-75');
+        sunIcon.classList.remove('opacity-100', 'scale-100');
+      }
     }
 
+    // Set initial state
+    const isDark = document.documentElement.classList.contains('dark');
+    updateIcons(isDark);
+
+    // Add click handler with debouncing for mobile
+    let debounceTimer;
     toggle.addEventListener('click', () => {
-      const isDark = document.documentElement.classList.contains('dark');
-      
-      if (isDark) {
-        document.documentElement.classList.remove('dark');
-        localStorage.setItem('theme', 'light');
-      } else {
-        document.documentElement.classList.add('dark');
-        localStorage.setItem('theme', 'dark');
-      }
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        const currentlyDark = document.documentElement.classList.contains('dark');
+        const newTheme = currentlyDark ? 'light' : 'dark';
+        
+        // Temporarily disable transitions to prevent color flickering
+        document.documentElement.classList.add('changing-theme');
+        
+        // Apply theme instantly
+        document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', newTheme);
+        
+        // Update icons
+        updateIcons(!currentlyDark);
+        
+        // Re-enable transitions after a brief delay
+        setTimeout(() => {
+          document.documentElement.classList.remove('changing-theme');
+        }, 100);
+      }, 50);
     });
+
+    // Listen for system theme changes
+    if (window.matchMedia) {
+      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+        if (!localStorage.getItem('theme')) {
+          const isDark = e.matches;
+          document.documentElement.classList[isDark ? 'add' : 'remove']('dark');
+          updateIcons(isDark);
+        }
+      });
+    }
   });
 </script>

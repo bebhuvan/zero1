@@ -21,48 +21,59 @@ const categories = Object.keys(channelsByCategory).sort();
 ---
 
 <Layout title="Channels | Zero1 Network" description="Browse all YouTube channels featured on Zero1 Network">
-  <main class="container max-w-7xl mx-auto px-6 py-12">
-    <div class="mb-12">
-      <h1 class="text-4xl font-bold text-gray-900 mb-4">Creator Channels</h1>
-      <p class="text-lg text-gray-600 mb-8">
+  <header class="bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm py-8 mb-12 border-b border-gray-100/60 dark:border-gray-800/60">
+    <div class="container max-w-7xl mx-auto px-6">
+      <h1 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">Creator Channels</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-300">
         Discover all {channelEntries.length} creators featured on Zero1 Network, organized by category.
       </p>
+    </div>
+  </header>
+  
+  <main class="container max-w-7xl mx-auto px-6 pb-12">
+    <div class="mb-12">
       
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-        <div class="bg-white rounded-lg border border-gray-100 p-6 text-center">
-          <div class="text-3xl font-bold text-gray-900 mb-2">{channelEntries.length}</div>
-          <div class="text-sm text-gray-600">Total Channels</div>
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+        <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 lg:p-6 text-center card-elevated">
+          <div class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">{channelEntries.length}</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">Total Channels</div>
         </div>
-        <div class="bg-white rounded-lg border border-gray-100 p-6 text-center">
-          <div class="text-3xl font-bold text-gray-900 mb-2">{categories.length}</div>
-          <div class="text-sm text-gray-600">Categories</div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 lg:p-6 text-center card-elevated">
+          <div class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">{categories.length}</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">Categories</div>
         </div>
-        <div class="bg-white rounded-lg border border-gray-100 p-6 text-center">
-          <div class="text-3xl font-bold text-gray-900 mb-2">
+        <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 lg:p-6 text-center card-elevated">
+          <div class="text-2xl lg:text-3xl font-bold text-gray-900 dark:text-white mb-2">
             {channelEntries.reduce((sum, [, channel]) => sum + channel.videos.length, 0)}
           </div>
-          <div class="text-sm text-gray-600">Total Videos</div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">Total Videos</div>
+        </div>
+        <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-4 lg:p-6 text-center card-elevated">
+          <div class="text-2xl lg:text-3xl font-bold text-green-600 dark:text-green-400 mb-2">
+            {channelEntries.filter(([, channel]) => channel.fetchStatus === 'success').length}
+          </div>
+          <div class="text-sm text-gray-600 dark:text-gray-400">Active Channels</div>
         </div>
       </div>
     </div>
 
     {categories.map(category => (
       <section class="mb-12">
-        <h2 class="text-2xl font-bold text-gray-900 mb-6 capitalize">
+        <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6 capitalize">
           {category} Channels
         </h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {channelsByCategory[category].map(channel => (
-            <div class="bg-white rounded-lg border border-gray-100 p-6 hover:border-gray-200 transition-colors hover:shadow-sm">
+            <div class="bg-white dark:bg-gray-800 rounded-lg border border-gray-100 dark:border-gray-700 p-6 hover:border-gray-200 dark:hover:border-gray-600 transition-all duration-200 hover:shadow-md card-elevated">
               <div class="flex items-start justify-between mb-4">
                 <div class="flex-1">
-                  <h3 class="text-lg font-semibold text-gray-900 mb-2">
+                  <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">
                     <a 
                       href={`https://www.youtube.com/channel/${channel.id}`}
                       target="_blank" 
                       rel="noopener noreferrer"
-                      class="hover:text-blue-600 transition-colors"
+                      class="hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
                     >
                       {channel.name}
                     </a>
@@ -74,7 +85,7 @@ const categories = Object.keys(channelsByCategory).sort();
                     href={`https://www.youtube.com/channel/${channel.id}`}
                     target="_blank" 
                     rel="noopener noreferrer"
-                    class="text-gray-400 hover:text-red-600 transition-colors"
+                    class="text-red-600 hover:text-red-700 transition-colors"
                     title="Visit YouTube Channel"
                   >
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
@@ -89,19 +100,19 @@ const categories = Object.keys(channelsByCategory).sort();
               
               <div class="space-y-3 mb-4">
                 <div class="flex justify-between text-sm">
-                  <span class="text-gray-600">Videos</span>
-                  <span class="font-medium text-gray-900">{channel.videos.length}</span>
+                  <span class="text-gray-600 dark:text-gray-400">Videos</span>
+                  <span class="font-medium text-gray-900 dark:text-white">{channel.videos.length}</span>
                 </div>
                 <div class="flex justify-between text-sm">
-                  <span class="text-gray-600">Last Updated</span>
-                  <span class="font-medium text-gray-900">
+                  <span class="text-gray-600 dark:text-gray-400">Last Updated</span>
+                  <span class="font-medium text-gray-900 dark:text-white">
                     {formatTimeAgo(channel.lastFetched)}
                   </span>
                 </div>
                 {channel.fetchDuration && (
                   <div class="flex justify-between text-sm">
-                    <span class="text-gray-600">Fetch Time</span>
-                    <span class="font-medium text-gray-900">
+                    <span class="text-gray-600 dark:text-gray-400">Fetch Time</span>
+                    <span class="font-medium text-gray-900 dark:text-white">
                       {Math.round(channel.fetchDuration / 1000)}s
                     </span>
                   </div>
@@ -110,10 +121,17 @@ const categories = Object.keys(channelsByCategory).sort();
 
               {channel.videos.length > 0 && (
                 <div class="border-t border-gray-100 pt-4">
-                  <h4 class="text-sm font-medium text-gray-900 mb-2">Latest Video</h4>
-                  <div class="text-sm text-gray-600">
-                    <div class="line-clamp-2 mb-1">{channel.videos[0].title}</div>
-                    <div class="text-xs text-gray-500">
+                  <h4 class="text-sm font-medium text-gray-900 dark:text-white mb-2">Latest Video</h4>
+                  <div class="text-sm text-gray-600 dark:text-gray-300">
+                    <a 
+                      href={channel.videos[0].youtubeUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="line-clamp-2 mb-1 hover:text-blue-600 dark:hover:text-blue-400 transition-colors"
+                    >
+                      {channel.videos[0].title}
+                    </a>
+                    <div class="text-xs text-gray-500 dark:text-gray-400">
                       {formatTimeAgo(channel.videos[0].publishedAt)}
                     </div>
                   </div>
@@ -141,7 +159,7 @@ const categories = Object.keys(channelsByCategory).sort();
           </svg>
         </div>
         <h3 class="text-lg font-medium text-gray-900 mb-2">No Channels Found</h3>
-        <p class="text-gray-600">Channels will appear here once they're added to the configuration.</p>
+        <p class="text-gray-600 dark:text-gray-400">Channels will appear here once they're added to the configuration.</p>
       </div>
     )}
   </main>
