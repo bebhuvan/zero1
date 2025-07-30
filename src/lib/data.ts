@@ -71,16 +71,11 @@ export function getTrendingVideos(limit = 10): VideoWithChannel[] {
 
 export function getFeaturedVideo(): VideoWithChannel | null {
   const recentVideos = getAllVideos()
-    .filter(video => !video.isLive)
-    .slice(0, 20);
+    .filter(video => !video.isLive);
   
   if (recentVideos.length === 0) return null;
   
-  return recentVideos.reduce((best, current) => {
-    const bestViews = parseInt(best.viewCount) || 0;
-    const currentViews = parseInt(current.viewCount) || 0;
-    return currentViews > bestViews ? current : best;
-  });
+  return recentVideos[0];
 }
 
 export function getLatestVideos(limit = 20): VideoWithChannel[] {
