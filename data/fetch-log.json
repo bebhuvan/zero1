@@ -1,361 +1,361 @@
 [
   {
-    "timestamp": "2025-10-26T05:37:24.421Z",
+    "timestamp": "2025-10-26T09:38:27.305Z",
     "level": "info",
     "message": "Starting RSS aggregation",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.429Z",
+    "timestamp": "2025-10-26T09:38:27.313Z",
     "level": "info",
     "message": "Backup created",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.429Z",
+    "timestamp": "2025-10-26T09:38:27.313Z",
     "level": "info",
     "message": "Fetching high priority channels",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.429Z",
+    "timestamp": "2025-10-26T09:38:27.314Z",
     "level": "info",
     "message": "Fetching RSS feed for Food Pharmer",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.585Z",
+    "timestamp": "2025-10-26T09:38:27.368Z",
     "level": "info",
     "message": "Fetching RSS feed for Backstage with Millionaires",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.587Z",
+    "timestamp": "2025-10-26T09:38:27.370Z",
     "level": "info",
     "message": "Fetching RSS feed for Wint Wealth",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.588Z",
+    "timestamp": "2025-10-26T09:38:27.371Z",
     "level": "info",
     "message": "Fetching RSS feed for The Cutting Edge School",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.818Z",
-    "level": "info",
-    "message": "Successfully fetched 11 videos for Backstage with Millionaires",
-    "data": {
-      "duration": 230
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:24.847Z",
-    "level": "info",
-    "message": "Successfully fetched 3 videos for Food Pharmer",
-    "data": {
-      "duration": 418
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:24.864Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for The Cutting Edge School",
-    "data": {
-      "duration": 279
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:24.881Z",
+    "timestamp": "2025-10-26T09:38:27.448Z",
     "level": "info",
     "message": "Successfully fetched 3 videos for Wint Wealth",
     "data": {
-      "duration": 294
+      "duration": 78
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:24.881Z",
+    "timestamp": "2025-10-26T09:38:27.475Z",
+    "level": "info",
+    "message": "Successfully fetched 2 videos for The Cutting Edge School",
+    "data": {
+      "duration": 107
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:27.497Z",
+    "level": "info",
+    "message": "Successfully fetched 11 videos for Backstage with Millionaires",
+    "data": {
+      "duration": 126
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:27.634Z",
+    "level": "info",
+    "message": "Successfully fetched 3 videos for Food Pharmer",
+    "data": {
+      "duration": 320
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:27.635Z",
     "level": "info",
     "message": "Fetching medium priority channels",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.881Z",
+    "timestamp": "2025-10-26T09:38:27.635Z",
     "level": "info",
     "message": "Fetching RSS feed for GrowthX",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.882Z",
+    "timestamp": "2025-10-26T09:38:27.635Z",
     "level": "info",
     "message": "Fetching RSS feed for Think School Hindi by Zero1",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.882Z",
+    "timestamp": "2025-10-26T09:38:27.636Z",
     "level": "info",
     "message": "Fetching RSS feed for Full Disclosure",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.883Z",
+    "timestamp": "2025-10-26T09:38:27.637Z",
     "level": "info",
     "message": "Fetching RSS feed for Ditto Insurance",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:24.883Z",
+    "timestamp": "2025-10-26T09:38:27.637Z",
     "level": "info",
     "message": "Fetching RSS feed for Indian Silicon Valley by Jivraj Singh Sachar",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.036Z",
-    "level": "info",
-    "message": "Successfully fetched 11 videos for Ditto Insurance",
-    "data": {
-      "duration": 153
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:25.061Z",
-    "level": "info",
-    "message": "Successfully fetched 6 videos for Think School Hindi by Zero1",
-    "data": {
-      "duration": 179
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:25.089Z",
+    "timestamp": "2025-10-26T09:38:27.838Z",
     "level": "info",
     "message": "Successfully fetched 2 videos for GrowthX",
     "data": {
-      "duration": 207
+      "duration": 203
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.120Z",
+    "timestamp": "2025-10-26T09:38:27.866Z",
     "level": "info",
     "message": "Successfully fetched 3 videos for Indian Silicon Valley by Jivraj Singh Sachar",
     "data": {
-      "duration": 237
+      "duration": 229
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.234Z",
+    "timestamp": "2025-10-26T09:38:27.879Z",
+    "level": "info",
+    "message": "Successfully fetched 6 videos for Think School Hindi by Zero1",
+    "data": {
+      "duration": 243
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:27.917Z",
+    "level": "info",
+    "message": "Successfully fetched 12 videos for Ditto Insurance",
+    "data": {
+      "duration": 280
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:27.970Z",
     "level": "info",
     "message": "Successfully fetched 1 videos for Full Disclosure",
     "data": {
-      "duration": 353
+      "duration": 335
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.234Z",
+    "timestamp": "2025-10-26T09:38:27.970Z",
     "level": "info",
     "message": "Fetching RSS feed for Been There, Done That",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.234Z",
+    "timestamp": "2025-10-26T09:38:27.971Z",
     "level": "info",
     "message": "Fetching RSS feed for Breakdown",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.235Z",
+    "timestamp": "2025-10-26T09:38:27.971Z",
     "level": "info",
     "message": "Fetching RSS feed for Sonia Shenoy",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.235Z",
+    "timestamp": "2025-10-26T09:38:27.972Z",
     "level": "info",
     "message": "Fetching RSS feed for Anurag Bansal",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.236Z",
+    "timestamp": "2025-10-26T09:38:27.972Z",
     "level": "info",
     "message": "Fetching RSS feed for gen.E",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.247Z",
+    "timestamp": "2025-10-26T09:38:27.978Z",
     "level": "info",
     "message": "Successfully fetched 14 videos for Breakdown",
     "data": {
-      "duration": 13
+      "duration": 7
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.378Z",
-    "level": "info",
-    "message": "Successfully fetched 6 videos for Sonia Shenoy",
-    "data": {
-      "duration": 143
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:25.382Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for Been There, Done That",
-    "data": {
-      "duration": 147
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:25.477Z",
-    "level": "info",
-    "message": "Successfully fetched 0 videos for gen.E",
-    "data": {
-      "duration": 241
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:25.511Z",
+    "timestamp": "2025-10-26T09:38:28.196Z",
     "level": "info",
     "message": "Successfully fetched 2 videos for Anurag Bansal",
     "data": {
-      "duration": 277
+      "duration": 226
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.512Z",
+    "timestamp": "2025-10-26T09:38:28.206Z",
     "level": "info",
-    "message": "Fetching RSS feed for The Plate India",
-    "data": {}
+    "message": "Successfully fetched 2 videos for Been There, Done That",
+    "data": {
+      "duration": 234
+    }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.886Z",
+    "timestamp": "2025-10-26T09:38:28.230Z",
     "level": "info",
-    "message": "Successfully fetched 5 videos for The Plate India",
+    "message": "Successfully fetched 0 videos for gen.E",
+    "data": {
+      "duration": 258
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:28.345Z",
+    "level": "info",
+    "message": "Successfully fetched 6 videos for Sonia Shenoy",
     "data": {
       "duration": 374
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:25.886Z",
+    "timestamp": "2025-10-26T09:38:28.345Z",
+    "level": "info",
+    "message": "Fetching RSS feed for The Plate India",
+    "data": {}
+  },
+  {
+    "timestamp": "2025-10-26T09:38:28.585Z",
+    "level": "info",
+    "message": "Successfully fetched 5 videos for The Plate India",
+    "data": {
+      "duration": 240
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:28.585Z",
     "level": "info",
     "message": "Fetching low priority channels",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.886Z",
+    "timestamp": "2025-10-26T09:38:28.585Z",
     "level": "info",
     "message": "Fetching RSS feed for The Other Side with Dilip",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.887Z",
+    "timestamp": "2025-10-26T09:38:28.586Z",
     "level": "info",
     "message": "Fetching RSS feed for Pranay Kapoor",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.887Z",
+    "timestamp": "2025-10-26T09:38:28.586Z",
     "level": "info",
     "message": "Fetching RSS feed for Vishal Bhargava",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.888Z",
+    "timestamp": "2025-10-26T09:38:28.587Z",
     "level": "info",
     "message": "Fetching RSS feed for Tirthak Saha",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:25.888Z",
+    "timestamp": "2025-10-26T09:38:28.587Z",
     "level": "info",
     "message": "Fetching RSS feed for Vyre",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:26.039Z",
-    "level": "info",
-    "message": "Successfully fetched 1 videos for Vishal Bhargava",
-    "data": {
-      "duration": 152
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:26.088Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for Pranay Kapoor",
-    "data": {
-      "duration": 201
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:26.105Z",
-    "level": "info",
-    "message": "Successfully fetched 7 videos for Tirthak Saha",
-    "data": {
-      "duration": 217
-    }
-  },
-  {
-    "timestamp": "2025-10-26T05:37:26.118Z",
+    "timestamp": "2025-10-26T09:38:28.591Z",
     "level": "info",
     "message": "Successfully fetched 0 videos for The Other Side with Dilip",
     "data": {
-      "duration": 232
+      "duration": 6
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:26.132Z",
+    "timestamp": "2025-10-26T09:38:28.790Z",
+    "level": "info",
+    "message": "Successfully fetched 2 videos for Pranay Kapoor",
+    "data": {
+      "duration": 204
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:28.794Z",
+    "level": "info",
+    "message": "Successfully fetched 1 videos for Vishal Bhargava",
+    "data": {
+      "duration": 208
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:28.818Z",
     "level": "info",
     "message": "Successfully fetched 9 videos for Vyre by Angad Kahai Singh",
     "data": {
-      "duration": 244
+      "duration": 231
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:26.132Z",
+    "timestamp": "2025-10-26T09:38:28.821Z",
+    "level": "info",
+    "message": "Successfully fetched 7 videos for Tirthak Saha",
+    "data": {
+      "duration": 234
+    }
+  },
+  {
+    "timestamp": "2025-10-26T09:38:28.822Z",
     "level": "info",
     "message": "Fetching RSS feed for Americonomics by Akash Bhat",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:26.132Z",
+    "timestamp": "2025-10-26T09:38:28.822Z",
     "level": "info",
     "message": "Fetching RSS feed for NRI Diaries by Nupur Dave",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:26.337Z",
+    "timestamp": "2025-10-26T09:38:29.036Z",
     "level": "info",
     "message": "Successfully fetched 3 videos for Americonomics by Akash Bhat",
     "data": {
-      "duration": 205
+      "duration": 214
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:26.383Z",
+    "timestamp": "2025-10-26T09:38:29.472Z",
     "level": "info",
     "message": "Successfully fetched 3 videos for NRI Diaries by Nupur Dave",
     "data": {
-      "duration": 251
+      "duration": 650
     }
   },
   {
-    "timestamp": "2025-10-26T05:37:26.386Z",
+    "timestamp": "2025-10-26T09:38:29.474Z",
     "level": "info",
     "message": "Data saved successfully",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:26.386Z",
+    "timestamp": "2025-10-26T09:38:29.474Z",
     "level": "info",
     "message": "Backup cleanup completed",
     "data": {}
   },
   {
-    "timestamp": "2025-10-26T05:37:26.386Z",
+    "timestamp": "2025-10-26T09:38:29.474Z",
     "level": "info",
     "message": "RSS aggregation completed successfully",
     "data": {
-      "duration": 1965,
-      "totalVideos": 96
+      "duration": 2169,
+      "totalVideos": 97
     }
   }
 ]
