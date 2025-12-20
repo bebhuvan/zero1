@@ -1,21 +1,23 @@
 {
-  "lastUpdated": "2025-12-20T02:56:08.392Z",
+  "lastUpdated": "2025-12-20T05:42:02.925Z",
   "channels": {
     "UCXmAKxh_qFL5703W9VPgpnA": {
       "name": "Food Pharmer",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-20T02:56:07.609Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 317,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCZknyXD-6tETm9aN8GQCi8g": {
       "name": "The Cutting Edge School",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:07.601Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 260,
       "videos": [
         {
@@ -32,14 +34,16 @@
           "keywords": "",
           "hash": "3ee6e748"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCggPd3Vf9ooG2r4I_ZNWBzA": {
       "name": "Wint Wealth",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:07.585Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 241,
       "videos": [
         {
@@ -84,14 +88,16 @@
           "keywords": "",
           "hash": "6eedde37"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCnpekFV93kB1O0rVqEKSumg": {
       "name": "Backstage with Millionaires",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-20T02:56:07.628Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 284,
       "videos": [
         {
@@ -206,23 +212,27 @@
           "keywords": "",
           "hash": "ab3204ec"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCf_XYgupvdx7rA44Ap3uI5w": {
       "name": "Full Disclosure",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:07.844Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 215,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCIVl4K2afJgLJv0b2ToTs_g": {
       "name": "GrowthX",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:07.738Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 108,
       "videos": [
         {
@@ -267,14 +277,16 @@
           "keywords": "",
           "hash": "0e6b3d0f"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC3-IDKNIABI98_J2aqa2YjQ": {
       "name": "Think School Hindi by Zero1",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-20T02:56:07.775Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 144,
       "videos": [
         {
@@ -333,14 +345,16 @@
           "keywords": "",
           "hash": "438e0976"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyKj-yaTpbnWZY90ajxB8WQ": {
       "name": "Ditto Insurance",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:07.726Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 95,
       "videos": [
         {
@@ -469,14 +483,16 @@
           "keywords": "",
           "hash": "89f74d4c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCOu85KXcYcEClNAeiKrDA6Q": {
       "name": "Indian Silicon Valley by Jivraj Singh Sachar",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:07.765Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 133,
       "videos": [
         {
@@ -535,14 +551,16 @@
           "keywords": "",
           "hash": "fbfb7dca"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyUQxtFk3guy3WHaZ-2NNOg": {
       "name": "Anurag Bansal",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-20T02:56:07.944Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 100,
       "videos": [
         {
@@ -573,14 +591,16 @@
           "keywords": "",
           "hash": "a892f6f3"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCcPI9kEPhyUDLBHGOhKqxOw": {
       "name": "Breakdown",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:07.971Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 127,
       "videos": [
         {
@@ -751,14 +771,16 @@
           "keywords": "",
           "hash": "670f8fd2"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCM7yoOhnMcfrEZ-5i9m-WFA": {
       "name": "Sonia Shenoy",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:07.963Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 118,
       "videos": [
         {
@@ -803,23 +825,27 @@
           "keywords": "",
           "hash": "5beb3c53"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCxX-O7rPl35IajrJnAdzIyw": {
       "name": "The Other Side with Dilip",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-20T02:56:08.200Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 102,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCMfazW6hC3eaWTW2q0ibhyQ": {
       "name": "Pranay Kapoor",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:08.221Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 122,
       "videos": [
         {
@@ -892,14 +918,16 @@
           "keywords": "",
           "hash": "e1302314"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCs0Awb1WCz0dNsq8zhfYl1A": {
       "name": "Vishal Bhargava",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:08.251Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 152,
       "videos": [
         {
@@ -944,14 +972,16 @@
           "keywords": "",
           "hash": "bbee5276"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC1MHVwwWd9l46ZeRM7qm_AA": {
       "name": "Tirthak Saha",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:08.262Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 162,
       "videos": [
         {
@@ -1066,14 +1096,16 @@
           "keywords": "",
           "hash": "4bd5cde6"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCFdZETZpeX3G7Pe3zan2fHA": {
       "name": "Vyre by Angad Kahai Singh",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-20T02:56:08.246Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 146,
       "videos": [
         {
@@ -1230,14 +1262,16 @@
           "keywords": "",
           "hash": "3cc5a409"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCtFCIACJgZK5cGVqWYWhGgg": {
       "name": "Americonomics by Akash Bhat",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-20T02:56:08.392Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 130,
       "videos": [
         {
@@ -1282,14 +1316,16 @@
           "keywords": "",
           "hash": "a47a1e20"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCM1vynzlNMa4r5MxwiEO6ag": {
       "name": "NRI Diaries by Nupur Dave",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:08.364Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 102,
       "videos": [
         {
@@ -1320,14 +1356,16 @@
           "keywords": "",
           "hash": "94e3ac91"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC19ruvzi32BWrWFpek4p3hA": {
       "name": "Been There, Done That",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-20T02:56:07.957Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 112,
       "videos": [
         {
@@ -1372,23 +1410,27 @@
           "keywords": "",
           "hash": "3794ab8f"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCv0ZVHNQmQF1M681j6kK-Hw": {
       "name": "gen.E",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-20T02:56:07.977Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 131,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCbMzIZqxM7pf8GuyaJDP0Vg": {
       "name": "The Plate India",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-20T02:56:08.098Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 121,
       "videos": [
         {
@@ -1475,14 +1517,16 @@
           "keywords": "",
           "hash": "71507b6c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-20T05:42:02.925Z",
+      "error": "HTTP 404: Not Found"
     }
   },
   "metadata": {
     "totalVideos": 90,
     "totalChannels": 22,
-    "successfulChannels": 22,
-    "lastSuccessfulFetch": "2025-12-20T02:56:08.392Z",
-    "fetchDuration": 1108
+    "successfulChannels": 0,
+    "lastSuccessfulFetch": "2025-12-20T05:42:02.926Z",
+    "fetchDuration": 1850
   }
 }
