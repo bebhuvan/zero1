@@ -1,21 +1,23 @@
 {
-  "lastUpdated": "2025-12-21T03:13:43.728Z",
+  "lastUpdated": "2025-12-21T05:40:55.560Z",
   "channels": {
     "UCXmAKxh_qFL5703W9VPgpnA": {
       "name": "Food Pharmer",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-21T03:13:43.056Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 284,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCZknyXD-6tETm9aN8GQCi8g": {
       "name": "The Cutting Edge School",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:42.980Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 155,
       "videos": [
         {
@@ -32,15 +34,17 @@
           "keywords": "",
           "hash": "3ee6e748"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCggPd3Vf9ooG2r4I_ZNWBzA": {
       "name": "Wint Wealth",
       "category": "finance",
       "color": "purple",
-      "lastFetched": "2025-12-21T03:13:43.012Z",
+      "lastFetched": "2025-12-21T05:40:54.507Z",
       "fetchStatus": "success",
-      "fetchDuration": 186,
+      "fetchDuration": 548,
       "videos": [
         {
           "id": "d9lvCzQc8r8",
@@ -50,7 +54,7 @@
           "thumbnailUrl": "https://i1.ytimg.com/vi/d9lvCzQc8r8/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=d9lvCzQc8r8",
           "duration": "PT0S",
-          "viewCount": "82755",
+          "viewCount": "82829",
           "isLive": false,
           "searchableText": "how passive income cover our expenses at 70 fill this form to be featured on wint wealth: https://forms.gle/iuugm7fygtfuuive9 after decades of navigating corporate life and city stress, vinod and beena nair chose a completely different path one rooted in purpose, peace, and slow living. when a heart attack jolted vinod out of the rat race, the couple didn’t just pause they reinvented life entirely. from building their first home using just lic loans and pf savings to founding banyan bliss a serene, eco-conscious homestay near mumbai they’   wint wealth",
           "keywords": "",
@@ -64,7 +68,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/IYrDBf83HZo/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=IYrDBf83HZo",
           "duration": "PT0S",
-          "viewCount": "70999",
+          "viewCount": "71016",
           "isLive": false,
           "searchableText": "how 1.4 cr helped me to achieve my retirement corpus? fill this form to be featured on wint wealth: https://forms.gle/iuugm7fygtfuuive9 meet srinivasan, a self-made professional who set a lifelong goal of retiring by 50, shares his deeply personal and practical journey to financial independence. from growing up with limited means and viewing money as a tool, to earning $53,000 in the us and returning to india with less than $10,000, he rebuilt his life with discipline, clarity, and smart planning. he explains how he used overdraft home loans to cut   wint wealth",
           "keywords": "",
@@ -78,7 +82,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/yu5HOQXrtSw/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=yu5HOQXrtSw",
           "duration": "PT0S",
-          "viewCount": "382492",
+          "viewCount": "382908",
           "isLive": false,
           "searchableText": "how this couple turned a job layoff into a crore a year through farming fill this form to be featured on wint wealth: https://forms.gle/iuugm7fygtfuuive9 what happens when two corporate professionals lose job certainty and choose to build a farm from the ground up? this is the story of mala farms. a couple in gurgaon who turned a layoff, a rescued baby sheep and a simple dream into a profitable farm that now makes close to one crore a year. from dairy to poultry to honey to vegetables, they built a business that supports local farmers, creates employment and gives t   wint wealth",
           "keywords": "",
@@ -91,7 +95,7 @@
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-21T03:13:43.068Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 241,
       "videos": [
         {
@@ -206,23 +210,27 @@
           "keywords": "",
           "hash": "a0b02e81"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCf_XYgupvdx7rA44Ap3uI5w": {
       "name": "Full Disclosure",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:43.193Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 125,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCIVl4K2afJgLJv0b2ToTs_g": {
       "name": "GrowthX",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:43.158Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 89,
       "videos": [
         {
@@ -267,14 +275,16 @@
           "keywords": "",
           "hash": "0e6b3d0f"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UC3-IDKNIABI98_J2aqa2YjQ": {
       "name": "Think School Hindi by Zero1",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-21T03:13:43.178Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 108,
       "videos": [
         {
@@ -333,14 +343,16 @@
           "keywords": "",
           "hash": "438e0976"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyKj-yaTpbnWZY90ajxB8WQ": {
       "name": "Ditto Insurance",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-21T03:13:43.189Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 117,
       "videos": [
         {
@@ -469,14 +481,16 @@
           "keywords": "",
           "hash": "e4ad1a7b"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCOu85KXcYcEClNAeiKrDA6Q": {
       "name": "Indian Silicon Valley by Jivraj Singh Sachar",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:43.198Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 126,
       "videos": [
         {
@@ -535,14 +549,16 @@
           "keywords": "",
           "hash": "fbfb7dca"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyUQxtFk3guy3WHaZ-2NNOg": {
       "name": "Anurag Bansal",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-21T03:13:43.302Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 104,
       "videos": [
         {
@@ -559,14 +575,16 @@
           "keywords": "",
           "hash": "96e21c00"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCcPI9kEPhyUDLBHGOhKqxOw": {
       "name": "Breakdown",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:43.285Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 87,
       "videos": [
         {
@@ -737,14 +755,16 @@
           "keywords": "",
           "hash": "670f8fd2"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCM7yoOhnMcfrEZ-5i9m-WFA": {
       "name": "Sonia Shenoy",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-21T03:13:43.334Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 134,
       "videos": [
         {
@@ -789,23 +809,27 @@
           "keywords": "",
           "hash": "5beb3c53"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCxX-O7rPl35IajrJnAdzIyw": {
       "name": "The Other Side with Dilip",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-21T03:13:43.610Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 130,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCMfazW6hC3eaWTW2q0ibhyQ": {
       "name": "Pranay Kapoor",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-21T03:13:43.565Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 84,
       "videos": [
         {
@@ -878,14 +902,16 @@
           "keywords": "",
           "hash": "e1302314"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCs0Awb1WCz0dNsq8zhfYl1A": {
       "name": "Vishal Bhargava",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-21T03:13:43.618Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 137,
       "videos": [
         {
@@ -930,14 +956,16 @@
           "keywords": "",
           "hash": "bbee5276"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC1MHVwwWd9l46ZeRM7qm_AA": {
       "name": "Tirthak Saha",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:43.593Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 111,
       "videos": [
         {
@@ -1052,14 +1080,16 @@
           "keywords": "",
           "hash": "4bd5cde6"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCFdZETZpeX3G7Pe3zan2fHA": {
       "name": "Vyre by Angad Kahai Singh",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-21T03:13:43.557Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 75,
       "videos": [
         {
@@ -1216,14 +1246,16 @@
           "keywords": "",
           "hash": "3cc5a409"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCtFCIACJgZK5cGVqWYWhGgg": {
       "name": "Americonomics by Akash Bhat",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-21T03:13:43.727Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 109,
       "videos": [
         {
@@ -1268,15 +1300,17 @@
           "keywords": "",
           "hash": "a47a1e20"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCM1vynzlNMa4r5MxwiEO6ag": {
       "name": "NRI Diaries by Nupur Dave",
       "category": "finance",
       "color": "purple",
-      "lastFetched": "2025-12-21T03:13:43.716Z",
+      "lastFetched": "2025-12-21T05:40:55.560Z",
       "fetchStatus": "success",
-      "fetchDuration": 97,
+      "fetchDuration": 350,
       "videos": [
         {
           "id": "pBRKfEMYtTQ",
@@ -1286,7 +1320,7 @@
           "thumbnailUrl": "https://i1.ytimg.com/vi/pBRKfEMYtTQ/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=pBRKfEMYtTQ",
           "duration": "PT0S",
-          "viewCount": "184",
+          "viewCount": "274",
           "isLive": false,
           "searchableText": "what nris need to know before starting up in india startups aren't easy, and nris want to do one in india-- so tell me, what should you do? meet our sponsor : manifest law. they are the top law firm in the us for immigrant visas. you can reach out to them for your immigration questions http://manifestlaw.com/nupur timestamps: 00:00 the nri dilemma 00:24 the harsh reality of indian startups 01:46 exploring the silicon valley route 02:38 navigating us talent visas 03:30 choosing the right location for your startup 04:28 challenges of building in i   nri diaries by nupur dave",
           "keywords": "",
@@ -1300,7 +1334,7 @@
           "thumbnailUrl": "https://i1.ytimg.com/vi/DwZnKH2bDXs/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=DwZnKH2bDXs",
           "duration": "PT0S",
-          "viewCount": "2876",
+          "viewCount": "2877",
           "isLive": false,
           "searchableText": "how indian real estate might be nris worst investment? oh ho, nris. you want to buy that house, sit abroad, and get rent. why it's almost always a bad strategy! i spoke to vishal bhargava, a journalist who tracks real estate & infrastructure, is also a blogger, interviewer and speaker (find him at https://www.instagram.com/vishal.bhargava.710/) and he gave me solid guidance for nris and the reasons behind it. chapters 00:00 nri real estate investments 00:35 the puzzle of nri real estate 01:29 historical challenges for nris 02:12 the market shift: co   nri diaries by nupur dave",
           "keywords": "",
@@ -1314,7 +1348,7 @@
           "thumbnailUrl": "https://i4.ytimg.com/vi/k9c5VQ2Ysnk/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=k9c5VQ2Ysnk",
           "duration": "PT0S",
-          "viewCount": "11517",
+          "viewCount": "11521",
           "isLive": false,
           "searchableText": "why are indians abroad facing racism now? why is racism against indians suddenly everywhere? from h-1b visa attacks to viral hate threads on twitter, something has shifted. and it's not just about visas or jobs—it's way deeper than that. i asked thousands of nris why they think anti-indian sentiment is exploding right now, and the answers were shocking. political extremism, manufactured outrage, scam call centers, cooking videos going viral for the wrong reasons, and yes—even our own behavior that doesn't help our case. in this video, i   nri diaries by nupur dave",
           "keywords": "",
@@ -1327,7 +1361,7 @@
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-21T03:13:43.318Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 118,
       "videos": [
         {
@@ -1372,23 +1406,27 @@
           "keywords": "",
           "hash": "3794ab8f"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCv0ZVHNQmQF1M681j6kK-Hw": {
       "name": "gen.E",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-21T03:13:43.375Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 174,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCbMzIZqxM7pf8GuyaJDP0Vg": {
       "name": "The Plate India",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-21T03:13:43.480Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 105,
       "videos": [
         {
@@ -1475,14 +1513,16 @@
           "keywords": "",
           "hash": "71507b6c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-21T05:40:55.560Z",
+      "error": "HTTP 404: Not Found"
     }
   },
   "metadata": {
     "totalVideos": 90,
     "totalChannels": 22,
-    "successfulChannels": 22,
-    "lastSuccessfulFetch": "2025-12-21T03:13:43.728Z",
-    "fetchDuration": 965
+    "successfulChannels": 2,
+    "lastSuccessfulFetch": "2025-12-21T05:40:55.560Z",
+    "fetchDuration": 1705
   }
 }
