@@ -1,22 +1,24 @@
 {
-  "lastUpdated": "2025-12-24T03:08:42.539Z",
+  "lastUpdated": "2025-12-24T05:44:44.700Z",
   "channels": {
     "UCXmAKxh_qFL5703W9VPgpnA": {
       "name": "Food Pharmer",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-24T03:08:40.156Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 1157,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCZknyXD-6tETm9aN8GQCi8g": {
       "name": "The Cutting Edge School",
       "category": "business",
       "color": "blue",
-      "lastFetched": "2025-12-24T03:08:39.443Z",
+      "lastFetched": "2025-12-24T05:44:42.257Z",
       "fetchStatus": "success",
-      "fetchDuration": 358,
+      "fetchDuration": 76,
       "videos": [
         {
           "id": "SW159x1EuBI",
@@ -26,7 +28,7 @@
           "thumbnailUrl": "https://i4.ytimg.com/vi/SW159x1EuBI/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=SW159x1EuBI",
           "duration": "PT0S",
-          "viewCount": "4019",
+          "viewCount": "4134",
           "isLive": false,
           "searchableText": "how to learn ai without getting dumb (2026 ai roadmap for parents) check out odoo today: https://www.odoo.com/r/vfa resources mentioned in the video: 👉 notion 3.0 - new agent explained with examples: https://youtu.be/pgbra_psp_y?si=7g8hbqxx1-hyx29i 👉 privacy tutorial for google gemini: https://youtu.be/lfpd4zz_smq 👉 privacy setting for meta ai: https://youtu.be/s6usnue_tb0 👉 privacy tutorial for perplexity: https://youtu.be/9i3aldqw73k 👉 privacy setting for chatgpt: https://youtu.be/qx8m4nobd38 parents aren’t scared of ai, they’re scared of their child bec   the cutting edge school",
           "keywords": "",
@@ -39,7 +41,7 @@
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:40.175Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 1090,
       "videos": [
         {
@@ -84,14 +86,16 @@
           "keywords": "",
           "hash": "6eedde37"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCnpekFV93kB1O0rVqEKSumg": {
       "name": "Backstage with Millionaires",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-24T03:08:39.457Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 371,
       "videos": [
         {
@@ -206,23 +210,27 @@
           "keywords": "",
           "hash": "bb08a78c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCf_XYgupvdx7rA44Ap3uI5w": {
       "name": "Full Disclosure",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-24T03:08:40.416Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 241,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCIVl4K2afJgLJv0b2ToTs_g": {
       "name": "GrowthX",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-24T03:08:40.422Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 245,
       "videos": [
         {
@@ -253,14 +261,16 @@
           "keywords": "",
           "hash": "0d9bfcdb"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC3-IDKNIABI98_J2aqa2YjQ": {
       "name": "Think School Hindi by Zero1",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-24T03:08:40.436Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 259,
       "videos": [
         {
@@ -333,14 +343,16 @@
           "keywords": "",
           "hash": "438e0976"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyKj-yaTpbnWZY90ajxB8WQ": {
       "name": "Ditto Insurance",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:40.432Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 254,
       "videos": [
         {
@@ -455,14 +467,16 @@
           "keywords": "",
           "hash": "4d786a5c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCOu85KXcYcEClNAeiKrDA6Q": {
       "name": "Indian Silicon Valley by Jivraj Singh Sachar",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-24T03:08:40.526Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 348,
       "videos": [
         {
@@ -535,14 +549,16 @@
           "keywords": "",
           "hash": "fbfb7dca"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyUQxtFk3guy3WHaZ-2NNOg": {
       "name": "Anurag Bansal",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-24T03:08:41.247Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 721,
       "videos": [
         {
@@ -559,14 +575,16 @@
           "keywords": "",
           "hash": "96e21c00"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCcPI9kEPhyUDLBHGOhKqxOw": {
       "name": "Breakdown",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-24T03:08:41.138Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 611,
       "videos": [
         {
@@ -737,14 +755,16 @@
           "keywords": "",
           "hash": "670f8fd2"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCM7yoOhnMcfrEZ-5i9m-WFA": {
       "name": "Sonia Shenoy",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:41.177Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 650,
       "videos": [
         {
@@ -789,23 +809,27 @@
           "keywords": "",
           "hash": "5beb3c53"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCxX-O7rPl35IajrJnAdzIyw": {
       "name": "The Other Side with Dilip",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-24T03:08:42.212Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 608,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCMfazW6hC3eaWTW2q0ibhyQ": {
       "name": "Pranay Kapoor",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:41.838Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 233,
       "videos": [
         {
@@ -878,14 +902,16 @@
           "keywords": "",
           "hash": "e1302314"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCs0Awb1WCz0dNsq8zhfYl1A": {
       "name": "Vishal Bhargava",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:41.831Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 226,
       "videos": [
         {
@@ -916,14 +942,16 @@
           "keywords": "",
           "hash": "a8e28f73"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC1MHVwwWd9l46ZeRM7qm_AA": {
       "name": "Tirthak Saha",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-24T03:08:41.738Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 132,
       "videos": [
         {
@@ -1038,14 +1066,16 @@
           "keywords": "",
           "hash": "4bd5cde6"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCFdZETZpeX3G7Pe3zan2fHA": {
       "name": "Vyre by Angad Kahai Singh",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-24T03:08:41.717Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 111,
       "videos": [
         {
@@ -1202,14 +1232,16 @@
           "keywords": "",
           "hash": "3cc5a409"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCtFCIACJgZK5cGVqWYWhGgg": {
       "name": "Americonomics by Akash Bhat",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-24T03:08:42.539Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 327,
       "videos": [
         {
@@ -1254,14 +1286,16 @@
           "keywords": "",
           "hash": "a1fb4491"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCM1vynzlNMa4r5MxwiEO6ag": {
       "name": "NRI Diaries by Nupur Dave",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:42.306Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 93,
       "videos": [
         {
@@ -1292,14 +1326,16 @@
           "keywords": "",
           "hash": "9c74aeda"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UC19ruvzi32BWrWFpek4p3hA": {
       "name": "Been There, Done That",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-24T03:08:41.207Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 679,
       "videos": [
         {
@@ -1344,23 +1380,27 @@
           "keywords": "",
           "hash": "3794ab8f"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCv0ZVHNQmQF1M681j6kK-Hw": {
       "name": "gen.E",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-24T03:08:40.672Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 144,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCbMzIZqxM7pf8GuyaJDP0Vg": {
       "name": "The Plate India",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-24T03:08:41.604Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 357,
       "videos": [
         {
@@ -1447,14 +1487,16 @@
           "keywords": "",
           "hash": "71507b6c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-24T05:44:44.700Z",
+      "error": "HTTP 404: Not Found"
     }
   },
   "metadata": {
     "totalVideos": 88,
     "totalChannels": 22,
-    "successfulChannels": 22,
-    "lastSuccessfulFetch": "2025-12-24T03:08:42.539Z",
-    "fetchDuration": 3549
+    "successfulChannels": 1,
+    "lastSuccessfulFetch": "2025-12-24T05:44:44.700Z",
+    "fetchDuration": 2616
   }
 }
