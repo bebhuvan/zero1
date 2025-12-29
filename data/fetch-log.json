@@ -1,360 +1,360 @@
 [
   {
-    "timestamp": "2025-12-29T03:21:42.927Z",
+    "timestamp": "2025-12-29T05:48:40.215Z",
     "level": "info",
     "message": "Starting RSS aggregation",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:42.935Z",
+    "timestamp": "2025-12-29T05:48:40.222Z",
     "level": "info",
     "message": "Backup created",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:42.935Z",
+    "timestamp": "2025-12-29T05:48:40.223Z",
     "level": "info",
     "message": "Fetching high priority channels",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:42.935Z",
+    "timestamp": "2025-12-29T05:48:40.223Z",
     "level": "info",
     "message": "Fetching RSS feed for Food Pharmer",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.044Z",
+    "timestamp": "2025-12-29T05:48:40.274Z",
     "level": "info",
     "message": "Fetching RSS feed for Backstage with Millionaires",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.045Z",
+    "timestamp": "2025-12-29T05:48:40.275Z",
     "level": "info",
     "message": "Fetching RSS feed for Wint Wealth",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.047Z",
+    "timestamp": "2025-12-29T05:48:40.276Z",
     "level": "info",
     "message": "Fetching RSS feed for The Cutting Edge School",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.225Z",
+    "timestamp": "2025-12-29T05:48:40.348Z",
     "level": "info",
     "message": "Successfully fetched 3 videos for Wint Wealth",
     "data": {
-      "duration": 180
+      "duration": 73
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.241Z",
-    "level": "info",
-    "message": "Successfully fetched 0 videos for Food Pharmer",
+    "timestamp": "2025-12-29T05:48:40.460Z",
+    "level": "error",
+    "message": "Failed to fetch Backstage with Millionaires",
     "data": {
-      "duration": 306
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.340Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for The Cutting Edge School",
+    "timestamp": "2025-12-29T05:48:40.462Z",
+    "level": "error",
+    "message": "Failed to fetch Food Pharmer",
     "data": {
-      "duration": 296
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.357Z",
-    "level": "info",
-    "message": "Successfully fetched 8 videos for Backstage with Millionaires",
+    "timestamp": "2025-12-29T05:48:40.463Z",
+    "level": "error",
+    "message": "Failed to fetch The Cutting Edge School",
     "data": {
-      "duration": 310
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.357Z",
+    "timestamp": "2025-12-29T05:48:40.463Z",
     "level": "info",
     "message": "Fetching medium priority channels",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.358Z",
+    "timestamp": "2025-12-29T05:48:40.463Z",
     "level": "info",
     "message": "Fetching RSS feed for GrowthX",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.359Z",
+    "timestamp": "2025-12-29T05:48:40.464Z",
     "level": "info",
     "message": "Fetching RSS feed for Think School Hindi by Zero1",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.359Z",
+    "timestamp": "2025-12-29T05:48:40.465Z",
     "level": "info",
     "message": "Fetching RSS feed for Full Disclosure",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.360Z",
+    "timestamp": "2025-12-29T05:48:40.465Z",
     "level": "info",
     "message": "Fetching RSS feed for Ditto Insurance",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.361Z",
+    "timestamp": "2025-12-29T05:48:40.467Z",
     "level": "info",
     "message": "Fetching RSS feed for Indian Silicon Valley by Jivraj Singh Sachar",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.464Z",
-    "level": "info",
-    "message": "Successfully fetched 1 videos for Full Disclosure",
-    "data": {
-      "duration": 106
-    }
-  },
-  {
-    "timestamp": "2025-12-29T03:21:43.478Z",
+    "timestamp": "2025-12-29T05:48:40.483Z",
     "level": "info",
     "message": "Successfully fetched 2 videos for GrowthX",
     "data": {
-      "duration": 119
+      "duration": 19
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.526Z",
+    "timestamp": "2025-12-29T05:48:40.511Z",
     "level": "info",
     "message": "Successfully fetched 5 videos for Indian Silicon Valley by Jivraj Singh Sachar",
     "data": {
-      "duration": 165
+      "duration": 44
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.532Z",
-    "level": "info",
-    "message": "Successfully fetched 8 videos for Ditto Insurance",
+    "timestamp": "2025-12-29T05:48:40.613Z",
+    "level": "error",
+    "message": "Failed to fetch Full Disclosure",
     "data": {
-      "duration": 172
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.585Z",
-    "level": "info",
-    "message": "Successfully fetched 5 videos for Think School Hindi by Zero1",
+    "timestamp": "2025-12-29T05:48:40.643Z",
+    "level": "error",
+    "message": "Failed to fetch Ditto Insurance",
     "data": {
-      "duration": 226
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.585Z",
+    "timestamp": "2025-12-29T05:48:41.159Z",
+    "level": "error",
+    "message": "Failed to fetch GrowthX",
+    "data": {
+      "error": "HTTP 404: Not Found"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T05:48:41.159Z",
     "level": "info",
     "message": "Fetching RSS feed for Been There, Done That",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.586Z",
+    "timestamp": "2025-12-29T05:48:41.160Z",
     "level": "info",
     "message": "Fetching RSS feed for Breakdown",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.586Z",
+    "timestamp": "2025-12-29T05:48:41.161Z",
     "level": "info",
     "message": "Fetching RSS feed for Sonia Shenoy",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.587Z",
+    "timestamp": "2025-12-29T05:48:41.161Z",
     "level": "info",
     "message": "Fetching RSS feed for Anurag Bansal",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.587Z",
+    "timestamp": "2025-12-29T05:48:41.162Z",
     "level": "info",
     "message": "Fetching RSS feed for gen.E",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.671Z",
-    "level": "info",
-    "message": "Successfully fetched 3 videos for Sonia Shenoy",
-    "data": {
-      "duration": 85
-    }
-  },
-  {
-    "timestamp": "2025-12-29T03:21:43.682Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for Anurag Bansal",
-    "data": {
-      "duration": 97
-    }
-  },
-  {
-    "timestamp": "2025-12-29T03:21:43.696Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for Been There, Done That",
-    "data": {
-      "duration": 109
-    }
-  },
-  {
-    "timestamp": "2025-12-29T03:21:43.707Z",
-    "level": "info",
-    "message": "Successfully fetched 0 videos for gen.E",
-    "data": {
-      "duration": 120
-    }
-  },
-  {
-    "timestamp": "2025-12-29T03:21:43.738Z",
+    "timestamp": "2025-12-29T05:48:41.169Z",
     "level": "info",
     "message": "Successfully fetched 12 videos for Breakdown",
     "data": {
-      "duration": 152
+      "duration": 9
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.739Z",
+    "timestamp": "2025-12-29T05:48:41.305Z",
+    "level": "error",
+    "message": "Failed to fetch Been There, Done That",
+    "data": {
+      "error": "HTTP 404: Not Found"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T05:48:41.307Z",
+    "level": "error",
+    "message": "Failed to fetch Anurag Bansal",
+    "data": {
+      "error": "HTTP 404: Not Found"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T05:48:41.308Z",
+    "level": "error",
+    "message": "Failed to fetch Sonia Shenoy",
+    "data": {
+      "error": "HTTP 404: Not Found"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T05:48:41.308Z",
+    "level": "error",
+    "message": "Failed to fetch gen.E",
+    "data": {
+      "error": "HTTP 404: Not Found"
+    }
+  },
+  {
+    "timestamp": "2025-12-29T05:48:41.308Z",
     "level": "info",
     "message": "Fetching RSS feed for The Plate India",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.859Z",
-    "level": "info",
-    "message": "Successfully fetched 5 videos for The Plate India",
+    "timestamp": "2025-12-29T05:48:41.457Z",
+    "level": "error",
+    "message": "Failed to fetch The Plate India",
     "data": {
-      "duration": 120
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.859Z",
+    "timestamp": "2025-12-29T05:48:41.457Z",
     "level": "info",
     "message": "Fetching low priority channels",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.859Z",
+    "timestamp": "2025-12-29T05:48:41.457Z",
     "level": "info",
     "message": "Fetching RSS feed for The Other Side with Dilip",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.860Z",
+    "timestamp": "2025-12-29T05:48:41.458Z",
     "level": "info",
     "message": "Fetching RSS feed for Pranay Kapoor",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.860Z",
+    "timestamp": "2025-12-29T05:48:41.459Z",
     "level": "info",
     "message": "Fetching RSS feed for Vishal Bhargava",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.861Z",
+    "timestamp": "2025-12-29T05:48:41.459Z",
     "level": "info",
     "message": "Fetching RSS feed for Tirthak Saha",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.861Z",
+    "timestamp": "2025-12-29T05:48:41.459Z",
     "level": "info",
     "message": "Fetching RSS feed for Vyre",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:43.925Z",
-    "level": "info",
-    "message": "Successfully fetched 4 videos for Pranay Kapoor",
+    "timestamp": "2025-12-29T05:48:41.607Z",
+    "level": "error",
+    "message": "Failed to fetch Vishal Bhargava",
     "data": {
-      "duration": 65
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.935Z",
-    "level": "info",
-    "message": "Successfully fetched 0 videos for The Other Side with Dilip",
+    "timestamp": "2025-12-29T05:48:41.608Z",
+    "level": "error",
+    "message": "Failed to fetch Pranay Kapoor",
     "data": {
-      "duration": 76
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:43.966Z",
-    "level": "info",
-    "message": "Successfully fetched 11 videos for Vyre by Angad Kahai Singh",
+    "timestamp": "2025-12-29T05:48:41.611Z",
+    "level": "error",
+    "message": "Failed to fetch Vyre",
     "data": {
-      "duration": 105
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:44.028Z",
-    "level": "info",
-    "message": "Successfully fetched 1 videos for Vishal Bhargava",
+    "timestamp": "2025-12-29T05:48:41.612Z",
+    "level": "error",
+    "message": "Failed to fetch Tirthak Saha",
     "data": {
-      "duration": 168
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:44.043Z",
-    "level": "info",
-    "message": "Successfully fetched 9 videos for Tirthak Saha",
+    "timestamp": "2025-12-29T05:48:42.016Z",
+    "level": "error",
+    "message": "Failed to fetch The Other Side with Dilip",
     "data": {
-      "duration": 182
+      "error": "HTTP 500: Internal Server Error"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:44.043Z",
+    "timestamp": "2025-12-29T05:48:42.016Z",
     "level": "info",
     "message": "Fetching RSS feed for Americonomics by Akash Bhat",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:44.043Z",
+    "timestamp": "2025-12-29T05:48:42.017Z",
     "level": "info",
     "message": "Fetching RSS feed for NRI Diaries by Nupur Dave",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:44.138Z",
-    "level": "info",
-    "message": "Successfully fetched 3 videos for Americonomics by Akash Bhat",
+    "timestamp": "2025-12-29T05:48:42.163Z",
+    "level": "error",
+    "message": "Failed to fetch Americonomics by Akash Bhat",
     "data": {
-      "duration": 95
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:44.187Z",
-    "level": "info",
-    "message": "Successfully fetched 2 videos for NRI Diaries by Nupur Dave",
+    "timestamp": "2025-12-29T05:48:42.165Z",
+    "level": "error",
+    "message": "Failed to fetch NRI Diaries by Nupur Dave",
     "data": {
-      "duration": 144
+      "error": "HTTP 404: Not Found"
     }
   },
   {
-    "timestamp": "2025-12-29T03:21:44.190Z",
+    "timestamp": "2025-12-29T05:48:42.168Z",
     "level": "info",
     "message": "Data saved successfully",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:44.190Z",
+    "timestamp": "2025-12-29T05:48:42.168Z",
     "level": "info",
     "message": "Backup cleanup completed",
     "data": {}
   },
   {
-    "timestamp": "2025-12-29T03:21:44.190Z",
+    "timestamp": "2025-12-29T05:48:42.169Z",
     "level": "info",
     "message": "RSS aggregation completed successfully",
     "data": {
-      "duration": 1263,
+      "duration": 1954,
       "totalVideos": 88
     }
   }
