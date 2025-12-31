@@ -1,21 +1,23 @@
 {
-  "lastUpdated": "2025-12-31T03:11:30.802Z",
+  "lastUpdated": "2025-12-31T05:45:31.675Z",
   "channels": {
     "UCXmAKxh_qFL5703W9VPgpnA": {
       "name": "Food Pharmer",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-31T03:11:29.644Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 525,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCZknyXD-6tETm9aN8GQCi8g": {
       "name": "The Cutting Edge School",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-31T03:11:29.598Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 424,
       "videos": [
         {
@@ -46,14 +48,16 @@
           "keywords": "",
           "hash": "a6bbd27a"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCggPd3Vf9ooG2r4I_ZNWBzA": {
       "name": "Wint Wealth",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-31T03:11:29.613Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 438,
       "videos": [
         {
@@ -84,15 +88,17 @@
           "keywords": "",
           "hash": "95b3b5f9"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCnpekFV93kB1O0rVqEKSumg": {
       "name": "Backstage with Millionaires",
       "category": "upskilling",
       "color": "orange",
-      "lastFetched": "2025-12-31T03:11:29.634Z",
+      "lastFetched": "2025-12-31T05:45:31.098Z",
       "fetchStatus": "success",
-      "fetchDuration": 457,
+      "fetchDuration": 279,
       "videos": [
         {
           "id": "AkabywekFlI",
@@ -102,7 +108,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/AkabywekFlI/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=AkabywekFlI",
           "duration": "PT0S",
-          "viewCount": "59565",
+          "viewCount": "59851",
           "isLive": false,
           "searchableText": "why swiggy instamart opened an offline store? - indian startup news 293 00:00 intro 00:33 instamart offline store 04:12 sarla aviation's air taxi 06:11 quick news updates 07:27 funding news this week’s indian startup news highlights a significant shift in the quick commerce landscape, milestones in aerospace, and a cooling trend in weekly funding. swiggy instamart’s offline pivot the most discussed news is swiggy instamart’s pilot of a physical retail store in gurugram. this move into \"bricks-and-mortar\" retail by a quick commerce giant signals a strategic evolution   backstage with millionaires",
           "keywords": "",
@@ -116,7 +122,7 @@
           "thumbnailUrl": "https://i3.ytimg.com/vi/fb-XpOwx0i0/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=fb-XpOwx0i0",
           "duration": "PT0S",
-          "viewCount": "70409",
+          "viewCount": "70570",
           "isLive": false,
           "searchableText": "how snapdeal became irrelevant? 0:00 intro 1:31 snapdeal’s 1.0 5:51 the desperate pivot snapdeal: from a $6.5 billion giant to an ipo for investor exit in 2016, snapdeal was one of india’s hottest tech companies — backed by softbank, alibaba, foxconn, and valued at a massive $6.5 billion. but in just a couple of years, the company collapsed under competitive pressure and strategic missteps, losing almost all of its market share to amazon, flipkart, and later meesho. in this video, we break down snapdeal’s dramatic journey — ho   backstage with millionaires",
           "keywords": "",
@@ -130,7 +136,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/5U4DmidRBao/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=5U4DmidRBao",
           "duration": "PT0S",
-          "viewCount": "27001",
+          "viewCount": "27032",
           "isLive": false,
           "searchableText": "why data centres are good for india? - indian startup news 292 0:00 intro 0:55 india's data centre opportunity 5:34 dhruva64 — first indigenous 64-bit processor 7:00 eggoz controversy & fssai probe 7:29 speciale invest’s ₹1,400 cr deep-tech fund 7:55 shiprocket files drhp 8:18 weekly funding news this week on backstage with millionaires, we break down one of the most important but least understood structural shifts happening in india right now — the massive push toward building data centres. after commerce minister piyush goyal said india is becoming a pref   backstage with millionaires",
           "keywords": "",
@@ -144,7 +150,7 @@
           "thumbnailUrl": "https://i3.ytimg.com/vi/vC0p8AHIvKQ/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=vC0p8AHIvKQ",
           "duration": "PT0S",
-          "viewCount": "107661",
+          "viewCount": "107662",
           "isLive": false,
           "searchableText": "quick commerce can't survive like this - indian startups news 291 0:00 intro 0:37 india’s quick commerce bubble 5:09 iit bombay’s deep-tech fund 6:33 quick update: unacademy valuation drop & m&a talks 7:03 quick update: virat kohli sells one8 to agilitas sports 7:17 quick update: uber direct launches via ondc 7:48 quick update: meesho ipo lists at 46% premium 8:10 weekly funding news this week on backstage with millionaires, we’re breaking down blinkit ceo albinder dhindsa’s explosive comment that india’s quick commerce industry is “nearing its limits.” after    backstage with millionaires",
           "keywords": "",
@@ -158,7 +164,7 @@
           "thumbnailUrl": "https://i1.ytimg.com/vi/PUYs3AO9-2E/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=PUYs3AO9-2E",
           "duration": "PT0S",
-          "viewCount": "61879",
+          "viewCount": "61958",
           "isLive": false,
           "searchableText": "how zepto went from crisis to a $7 billion turnaround? 0:00 intro 1:37 what went wrong with zepto 6:26 zepto’s turnaround in 2025 10:46 road ahead zepto’s unbelievable turnaround: from massive losses to a potential ipo just a year ago, zepto was in serious trouble — heavy burn, shrinking market share, public backlash over dark patterns, and rumours that the company might collapse like dunzo. but in one of the most unexpected comebacks in india’s startup world, zepto has reversed its fortunes dramatically. in this video, we break down how zepto went    backstage with millionaires",
           "keywords": "",
@@ -172,7 +178,7 @@
           "thumbnailUrl": "https://i1.ytimg.com/vi/H8lXxGXgFG0/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=H8lXxGXgFG0",
           "duration": "PT0S",
-          "viewCount": "32181",
+          "viewCount": "32182",
           "isLive": false,
           "searchableText": "how 'peak xv' became india's most successful vc? - indian startup news 290 form to test out our fintech app - https://bit.ly/bwmstealth 0:00 intro 01:02 peak xv: india’s vc no 1 05:31 bwm product integration 07:20 ola electric's fall 09:24 bharat taxi launch 09:49 razorpay gets rbi cross-border licence 10:08 wakefit, aequs ipo 10:45 openai in talks with tcs 11:00 weekly funding news this week on backstage with millionaires, we’re breaking down how peak xv has quietly become india’s most successful vc fund — generating more than $4 billion in returns in just the last 18   backstage with millionaires",
           "keywords": "",
@@ -186,7 +192,7 @@
           "thumbnailUrl": "https://i3.ytimg.com/vi/jKcxGtOCi2Y/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=jKcxGtOCi2Y",
           "duration": "PT0S",
-          "viewCount": "18032",
+          "viewCount": "18033",
           "isLive": false,
           "searchableText": "how furlenco finally turned profitable after 10 years? - indian startups news 289 0:00 intro 0:35 furlenco finally turns profitable after 10 years 6:19 pm modi unveils skyroot’s first orbital rocket 7:38 quick update: paytm payment aggregator licence 8:03 quick update: rapido partners with magicpin 8:20 quick update: eon space labs miniaturised space telescope mira 8:49 weekly funding news this week on backstage with millionaires, we’re breaking down one of the most dramatic turnarounds in the indian startup ecosystem — furlenco posting profit for the first time ever in 10 ye   backstage with millionaires",
           "keywords": "",
@@ -200,7 +206,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/UwFXV38st0Q/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=UwFXV38st0Q",
           "duration": "PT0S",
-          "viewCount": "46727",
+          "viewCount": "46733",
           "isLive": false,
           "searchableText": "why indian social media apps fail? check out growthx at - https://growthx.cc/millionaires 0:00 intro 1:35 reason 1 3:53 growthx (sponsor) 5:08 reason 2 6:48 reason 3 8:34 solution why has india still not built a successful social media platform? every few years, a new indian social media platform explodes — hike, sharechat, moj, koo, and most recently arattai. for a moment, it feels like we finally have a homegrown platform that can compete with whatsapp, facebook, tiktok or twitter. but almost every time, the hype fades. downloa   backstage with millionaires",
           "keywords": "",
@@ -213,7 +219,7 @@
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-31T03:11:29.864Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 220,
       "videos": [
         {
@@ -230,14 +236,16 @@
           "keywords": "",
           "hash": "fc6eeb79"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCIVl4K2afJgLJv0b2ToTs_g": {
       "name": "GrowthX",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-31T03:11:29.781Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 135,
       "videos": [
         {
@@ -268,14 +276,16 @@
           "keywords": "",
           "hash": "1764227c"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UC3-IDKNIABI98_J2aqa2YjQ": {
       "name": "Think School Hindi by Zero1",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-31T03:11:29.788Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 142,
       "videos": [
         {
@@ -362,14 +372,16 @@
           "keywords": "",
           "hash": "bbb2ea8f"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCyKj-yaTpbnWZY90ajxB8WQ": {
       "name": "Ditto Insurance",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-31T03:11:29.771Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 124,
       "videos": [
         {
@@ -484,14 +496,16 @@
           "keywords": "",
           "hash": "0b6c5a17"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCOu85KXcYcEClNAeiKrDA6Q": {
       "name": "Indian Silicon Valley by Jivraj Singh Sachar",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-31T03:11:30.009Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 361,
       "videos": [
         {
@@ -550,14 +564,16 @@
           "keywords": "",
           "hash": "e9e41ad0"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCyUQxtFk3guy3WHaZ-2NNOg": {
       "name": "Anurag Bansal",
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-31T03:11:30.142Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 133,
       "videos": [
         {
@@ -588,14 +604,16 @@
           "keywords": "",
           "hash": "96e21c00"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCcPI9kEPhyUDLBHGOhKqxOw": {
       "name": "Breakdown",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-31T03:11:30.149Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 139,
       "videos": [
         {
@@ -766,14 +784,16 @@
           "keywords": "",
           "hash": "38ba28f0"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCM7yoOhnMcfrEZ-5i9m-WFA": {
       "name": "Sonia Shenoy",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-31T03:11:30.120Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 110,
       "videos": [
         {
@@ -818,24 +838,28 @@
           "keywords": "",
           "hash": "a08fe3d0"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCxX-O7rPl35IajrJnAdzIyw": {
       "name": "The Other Side with Dilip",
       "category": "health",
       "color": "green",
       "lastFetched": "2025-12-31T03:11:30.630Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 207,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCMfazW6hC3eaWTW2q0ibhyQ": {
       "name": "Pranay Kapoor",
       "category": "finance",
       "color": "purple",
-      "lastFetched": "2025-12-31T03:11:30.540Z",
+      "lastFetched": "2025-12-31T05:45:31.575Z",
       "fetchStatus": "success",
-      "fetchDuration": 117,
+      "fetchDuration": 175,
       "videos": [
         {
           "id": "js9Sj-3wreM",
@@ -845,7 +869,7 @@
           "thumbnailUrl": "https://i3.ytimg.com/vi/js9Sj-3wreM/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=js9Sj-3wreM",
           "duration": "PT0S",
-          "viewCount": "7664",
+          "viewCount": "8648",
           "isLive": false,
           "searchableText": "how we navigate our finances | money after marriage | ep. 2 couple finance episode 2 is here. today i am joined by my wife shreya, and together we will walk you through our journey with money as a working couple. finances change after marriage, and we've been married about 7 years. in this episode, we will discuss the importance of financial planning as a married couple - how it is essential to get on the same page when it comes to money and how we navigate it. if you want to feature in the video, fill up this form here! https://forms.gle/cnzjcpvq2k32dzh   pranay kapoor",
           "keywords": "",
@@ -859,7 +883,7 @@
           "thumbnailUrl": "https://i1.ytimg.com/vi/X6bNHdRgENE/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=X6bNHdRgENE",
           "duration": "PT0S",
-          "viewCount": "47726",
+          "viewCount": "47757",
           "isLive": false,
           "searchableText": "perfect two car garage? early experiences | resale learnings | modifications invest in bonds on the wint wealth platform and get fixed 9-12%. click here! https://wintwealth.onelink.me/o6zx/pranaykapoor garage update :) we replaced the swift with a new car to complement the slavia. tune in to find out the why and the what of it. i will also be covering the story of how sold my swift and the experience around it. will also be covering financing, modifications and other fun stuff. 0:00 highlights 1:19 intro 4:21 why thar roxx? 7:22 mece framework between slavia and roxx 9:1   pranay kapoor",
           "keywords": "",
@@ -873,7 +897,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/iBa1_q9kels/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=iBa1_q9kels",
           "duration": "PT0S",
-          "viewCount": "17229",
+          "viewCount": "17279",
           "isLive": false,
           "searchableText": "money after marriage | how to combine finances? ep. 1 if you want to share your story, click on the form below. https://forms.gle/k5g3khquxayqyj2i8 looking for someone unbiased to help you plan your finances? book an introduction call with the financialist to plan for your specific goals: https://tinyurl.com/4wucp3ka 0:00 highlights 1:03 intro 2:09 about hirena and pankit 3:22 finances before marriage 7:10 savings before marriage 9:43 us habits of spending 13:47 marriage expenses 17:47 post marriage finances 20:39 investment profiles of pankit and    pranay kapoor",
           "keywords": "",
@@ -887,7 +911,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/IVbHl28-9zA/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=IVbHl28-9zA",
           "duration": "PT0S",
-          "viewCount": "6159",
+          "viewCount": "6163",
           "isLive": false,
           "searchableText": "hold your company stock or sell? thinking about concentration get on a call with the financialist to get fixed-fee only personalized financial planning: https://tinyurl.com/4wucp3ka in today's video, we discuss restricted stock units. i will walk you through three sections on how to think about it: 1) what are the biases at play that are making you not sell your stock? 2) a data simulation over a 9 year period with 4 major companies: amazon, google, nvidia, salesforce 3) a framework on concentration if you've been dabbling with the question whether to sell   pranay kapoor",
           "keywords": "",
@@ -901,7 +925,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/93bLBulkUsc/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=93bLBulkUsc",
           "duration": "PT0S",
-          "viewCount": "37097",
+          "viewCount": "37111",
           "isLive": false,
           "searchableText": "credit card mistakes we made in 2025 | honest learnings and lessons go check out slice and open your bank account using the link below. use my code to get faster account opening. https://slice.go.link/3h8rt code:prankapoor25 in this episode, we reflect on the year by discussing the major mistakes we made in the areas of credit cards, reward points, travel redemptions and financial optimisation. the objective of this conversation is to share our learnings transparently so that viewers can avoid the same errors. we cover topics such as incorrect point transfers, c   pranay kapoor",
           "keywords": "",
@@ -914,7 +938,7 @@
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-31T03:11:30.522Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 98,
       "videos": [
         {
@@ -931,14 +955,16 @@
           "keywords": "",
           "hash": "ba889973"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UC1MHVwwWd9l46ZeRM7qm_AA": {
       "name": "Tirthak Saha",
       "category": "business",
       "color": "blue",
       "lastFetched": "2025-12-31T03:11:30.639Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 215,
       "videos": [
         {
@@ -1067,15 +1093,17 @@
           "keywords": "",
           "hash": "4bd5cde6"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCFdZETZpeX3G7Pe3zan2fHA": {
       "name": "Vyre by Angad Kahai Singh",
       "category": "business",
       "color": "blue",
-      "lastFetched": "2025-12-31T03:11:30.560Z",
+      "lastFetched": "2025-12-31T05:45:31.541Z",
       "fetchStatus": "success",
-      "fetchDuration": 136,
+      "fetchDuration": 140,
       "videos": [
         {
           "id": "RuyiR3mTDVU",
@@ -1085,7 +1113,7 @@
           "thumbnailUrl": "https://i3.ytimg.com/vi/RuyiR3mTDVU/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=RuyiR3mTDVU",
           "duration": "PT0S",
-          "viewCount": "3265",
+          "viewCount": "3269",
           "isLive": false,
           "searchableText": "does anant ambani truly deserve his wealth? | truth about nepotism in this video we talk about nepotism and how everyone has an opinion on nepotism. and in india, we throw that word around like it explains everything. from ambani kids to aryan khan, bollywood actors, star kids, influencers, startup founders, and politicians—one label, no questions asked. but what if that label is hiding something far more uncomfortable about privilege, connections, and opportunity in india? this video doesn’t give you answers upfront. it pulls at the one comparison we’re all av   vyre by angad kahai singh",
           "keywords": "",
@@ -1099,7 +1127,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/isNNY1ovVaE/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=isNNY1ovVaE",
           "duration": "PT0S",
-          "viewCount": "41476",
+          "viewCount": "41508",
           "isLive": false,
           "searchableText": "dear indians, please don't have kids! 🙏 in this video, we talk about why so many young indians are questioning the idea of having children and choosing a different path for their lives. from rising costs and career pressure to emotional readiness, mental health, and family expectations, we break down the real reasons parenthood is no longer an automatic decision. is having kids still the “next step” in life, or is it time we stop treating it like a default setting? in a country where children are often seen as purpose, legacy, or secu   vyre by angad kahai singh",
           "keywords": "",
@@ -1113,7 +1141,7 @@
           "thumbnailUrl": "https://i2.ytimg.com/vi/E9FYbQSEuNw/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=E9FYbQSEuNw",
           "duration": "PT0S",
-          "viewCount": "145741",
+          "viewCount": "145757",
           "isLive": false,
           "searchableText": "dear indians, please don't get married! marriage in india, tradition or trap? in this video, we talk about why so many young indians are rethinking marriage and choosing to live life on their own terms. from financial pressure to emotional expectations, and from family traditions to societal judgment, we’ll dive deep into the real reasons why marriage is no longer everyone’s dream. is marriage still relevant in modern india, or is it time to redefine what happiness and partnership mean in today’s world? whether you’re single, engaged,   vyre by angad kahai singh",
           "keywords": "",
@@ -1155,7 +1183,7 @@
           "thumbnailUrl": "https://i4.ytimg.com/vi/wgmBfdJZHNQ/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=wgmBfdJZHNQ",
           "duration": "PT0S",
-          "viewCount": "78759",
+          "viewCount": "78761",
           "isLive": false,
           "searchableText": "how jobs are killing marriages in india are jobs silently destroying indian marriages? in today’s fast-paced world, indian couples are caught in a constant tug-of-war between professional ambitions and personal relationships. this video dives deep into how demanding work hours, job relocations, and corporate stress are creating emotional distance between partners. from dual-income households to long-distance marriages, we explore real-life stories and psychological insights behind why modern careers are straining the sacred bond of ma   vyre by angad kahai singh",
           "keywords": "",
@@ -1169,7 +1197,7 @@
           "thumbnailUrl": "https://i4.ytimg.com/vi/kIEorPHVA7o/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=kIEorPHVA7o",
           "duration": "PT0S",
-          "viewCount": "50359",
+          "viewCount": "50361",
           "isLive": false,
           "searchableText": "why indians can’t stop pirating movies (but really should) movie piracy is a massive problem in india, and many people don’t realize the serious impact it has on the film industry. in this video, we explore the reasons why indians keep turning to pirated movies despite the risks and the harm it causes to filmmakers, actors, and everyone involved in making the movies we love. from easy access to affordability issues, we break down the real causes behind piracy culture in india, and why it’s time to change this habit. if you care about supporting indian c   vyre by angad kahai singh",
           "keywords": "",
@@ -1211,7 +1239,7 @@
           "thumbnailUrl": "https://i3.ytimg.com/vi/2AqUSUNUgKo/hqdefault.jpg",
           "youtubeUrl": "https://www.youtube.com/watch?v=2AqUSUNUgKo",
           "duration": "PT0S",
-          "viewCount": "61701",
+          "viewCount": "61703",
           "isLive": false,
           "searchableText": "dear indians, iphone is fooling you! in this video, i delve into the growing trend of iphone obsession in india, particularly among middle and lower-income groups. despite financial limitations, many people are purchasing iphones as a status symbol, without realizing that apple's secret strategy is to lure them into its broader product ecosystem. i also explore the mindset behind why so many indians are drawn to iphones. stick around until the end to learn why the iphone may actually be a liability and how apple’s marketing tactics   vyre by angad kahai singh",
           "keywords": "",
@@ -1238,7 +1266,7 @@
       "category": "upskilling",
       "color": "orange",
       "lastFetched": "2025-12-31T03:11:30.801Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 162,
       "videos": [
         {
@@ -1283,14 +1311,16 @@
           "keywords": "",
           "hash": "a1fb4491"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCM1vynzlNMa4r5MxwiEO6ag": {
       "name": "NRI Diaries by Nupur Dave",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-31T03:11:30.764Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 123,
       "videos": [
         {
@@ -1321,14 +1351,16 @@
           "keywords": "",
           "hash": "9c74aeda"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UC19ruvzi32BWrWFpek4p3hA": {
       "name": "Been There, Done That",
       "category": "finance",
       "color": "purple",
       "lastFetched": "2025-12-31T03:11:30.157Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 146,
       "videos": [
         {
@@ -1359,23 +1391,27 @@
           "keywords": "",
           "hash": "22b9dc6a"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 404: Not Found"
     },
     "UCv0ZVHNQmQF1M681j6kK-Hw": {
       "name": "gen.E",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-31T03:11:30.221Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 209,
-      "videos": []
+      "videos": [],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     },
     "UCbMzIZqxM7pf8GuyaJDP0Vg": {
       "name": "The Plate India",
       "category": "sustainability",
       "color": "teal",
       "lastFetched": "2025-12-31T03:11:30.422Z",
-      "fetchStatus": "success",
+      "fetchStatus": "error",
       "fetchDuration": 201,
       "videos": [
         {
@@ -1448,14 +1484,16 @@
           "keywords": "",
           "hash": "306105c3"
         }
-      ]
+      ],
+      "lastAttemptedFetch": "2025-12-31T05:45:31.675Z",
+      "error": "HTTP 500: Internal Server Error"
     }
   },
   "metadata": {
     "totalVideos": 88,
     "totalChannels": 22,
-    "successfulChannels": 22,
-    "lastSuccessfulFetch": "2025-12-31T03:11:30.802Z",
-    "fetchDuration": 1692
+    "successfulChannels": 3,
+    "lastSuccessfulFetch": "2025-12-31T05:45:31.675Z",
+    "fetchDuration": 954
   }
 }
